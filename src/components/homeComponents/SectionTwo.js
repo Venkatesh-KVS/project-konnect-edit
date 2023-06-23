@@ -17,7 +17,7 @@ const SectionTwo = () => {
             <img
               // style={{ width: 150, height: 150, borderRadius: 100 / 1 }}
               className="tst-icon"
-              src="/icons/location.svg"
+              src="/konnect-app/icons/location.svg"
               alt="test-icon"
             ></img>
             <h2 className="tst-title">Nearest Center</h2>
@@ -26,7 +26,7 @@ const SectionTwo = () => {
           <div className="tst tstTwo ">
             <img
               className="tst-icon"
-              src="/icons/Lab.svg"
+              src="/konnect-app/icons/Lab.svg"
               alt="test-icon"
             ></img>
             <h2 className="tst-title">Book a Test</h2>
@@ -35,7 +35,7 @@ const SectionTwo = () => {
           <div className="tst tstThree ">
             <img
               className="tst-icon"
-              src="/icons/Prescription.svg"
+              src="/konnect-app/icons/Prescription.svg"
               alt="test-icon"
             ></img>
             <h2 className="tst-title">Upload Prescription</h2>
@@ -44,7 +44,7 @@ const SectionTwo = () => {
           <div className="tst tstFour ">
             <img
               className="tst-icon"
-              src="/icons/download-report.svg"
+              src="/konnect-app/icons/download-report.svg"
               alt="test-icon"
             ></img>
             <h2 className="tst-title">Test Name</h2>
@@ -53,7 +53,7 @@ const SectionTwo = () => {
           <div className="tst tstFive ">
             <img
               className="tst-icon"
-              src="/icons/download-report.svg"
+              src="/konnect-app/icons/download-report.svg"
               alt="test-icon"
             ></img>
             <h2 className="tst-title">Download Report</h2>

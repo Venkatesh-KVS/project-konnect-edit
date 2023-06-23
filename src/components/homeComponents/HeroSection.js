@@ -2,8 +2,8 @@ import React from "react";
 // import VideoPlayer from "react-background-video-player";
 
 const imag = {
-  calender: "./icons/calender.svg",
-  box: "./icons/box.svg",
+  calender: "konnect-app/icons/calender.svg",
+  box: "/konnect-app/icons/box.svg",
 };
 
 const HeroSection = () => {
@@ -30,7 +30,7 @@ const HeroSection = () => {
       </div>
       <div className="hero-video d-flex">
         <video autoPlay loop muted controls={false}>
-          <source src="./images/hero24.mp4" type="video/mp4" />
+          <source src="/konnect-app/images/hero24.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="gyr my-4">
