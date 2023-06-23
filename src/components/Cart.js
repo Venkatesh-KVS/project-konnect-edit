@@ -1,5 +1,5 @@
 import React from "react";
-import DynamicImage from "./DynamicImage";
+import DynamicImage from "./requiredPages/DynamicImage";
 
 const Cart = () => {
   const imageName = "k-10.png";

@@ -6,10 +6,13 @@ import Header from "./components/Header";
 import About from "./components/About";
 import Products from "./components/Products";
 import Cart from "./components/Cart";
-import ErrorPage from "./components/ErrorPage";
+import ErrorPage from "./components/requiredPages/ErrorPage";
 import Footer from "./components/Footer";
-import Services from "./components/homeComponents/Services";
+import HomeCollection from "./components/HomeCollection";
+import Services from "./components/Services";
 import SingleProduct from "./SingleProduct";
+import Packages from "./components/Packages";
+import LocateClinic from "./components/LocateClinic";
 
 function App() {
   return (
@@ -23,7 +26,10 @@ function App() {
           <Route path="/products" element={<Products />} />
           <Route path="/singleproduct/:id" element={<SingleProduct />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/home-collection" element={<HomeCollection />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/packages" element={<Packages />} />
+          <Route path="/locate-clinic" element={<LocateClinic />} />
         </Routes>
         <Footer />
       </Router>

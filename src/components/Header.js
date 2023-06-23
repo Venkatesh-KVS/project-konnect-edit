@@ -1,5 +1,5 @@
 import React from "react";
-import DynamicImage from "./DynamicImage";
+import DynamicImage from "./requiredPages/DynamicImage";
 
 import Navbar from "./Navbar";
 import { NavLink } from "react-router-dom";
