@@ -1,8 +1,9 @@
 import React from "react";
-const imag = {
-  calender: "konnect-app/icons/calender.svg",
-  box: "/konnect-app/icons/box.svg",
-};
+import DynamicImage from "../requiredPages/DynamicImage";
+// const imag = {
+//   calender: "konnect-app/icons/calender.svg",
+//   box: "/konnect-app/icons/box.svg",
+// };
 
 const HeroSection = () => {
   return (
@@ -18,11 +19,14 @@ const HeroSection = () => {
         </h1>
 
         <div className="cohp d-flex my-4 mt-5">
-          <img className="cohp-img" src={imag.box} alt="icon" />
+          {/* <img className="cohp-img" src={imag.box} alt="icon" /> */}
+          <DynamicImage imageName={"/icons/box-cohp.svg"} />
           <h3 className="cohp-btn btn px-2 p-2">Check Our Health Packages</h3>
         </div>
         <div className="book d-flex">
-          <img className="book-img" src={imag.calender} alt="icon" />
+          {/* <img className="book-img" src={imag.calender} alt="icon" /> */}
+          <DynamicImage imageName={"/icons/calender.svg"} />
+
           <button className="book-btn btn px-2 p-2">Book an Appointment</button>
         </div>
       </div>
