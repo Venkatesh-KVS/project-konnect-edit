@@ -53,12 +53,10 @@ const About = () => {
           />
         </div>
       </div>
+      {/* -----------------------------Section Two------------------------------ */}
       <div className="sec sec-2 container flex flex-r">
         <div className="img-box ">
-          <DynamicImage
-            className="secThree-imgLeft"
-            imageName={"about-2.jpg"}
-          />
+          <DynamicImage imageName={"about-2.jpg"} />
         </div>
         <div className="sec-left ">
           <h3 className="paraH3">Why Konnect Diagnostics</h3>
@@ -124,7 +122,7 @@ const About = () => {
       {/* -----------------------------Section three------------------------------ */}
       <div class="sec-m s4 container flex flex-r">
         <div className=" s4-info">
-          <span className="">Founder</span>
+          <span className="">Founder -----</span>
           <h3>Dr. Mahesh Rao</h3>
           <p className="para">
             At Konnect Diagnostics, our team is led by the visionary founder,
@@ -138,9 +136,67 @@ const About = () => {
             accessible to everyone, regardless of their geographical location.
           </p>
         </div>
-        <DynamicImage imageName={"mahesh-rao.png"} />
+        <div className=" s4-img">
+          <DynamicImage imageName={"mahesh-rao.png"} />
+        </div>
       </div>
-      <div className="sec-m s5 "></div>
+      <div className="sec-m s5 container flex flex-r">
+        <div className=" s5-box s5-box1 ">
+          <div className=" s5-img">
+            <DynamicImage imageName={"/icons/box.svg"} />
+          </div>
+          <div className=" s5-txt">
+            <p className="para">
+              At Konnect Diagnostics, our team is led by the visionary founder,
+              Dr. Mahesh Rao. With 15 years of experience as an orthopedic
+              surgeon and expertise in the diagnostic business, Dr. Rao has
+              played a pivotal role in shaping our organization. Driven by a
+              passion for providing quality-focused and affordable diagnostic
+              services, Dr. Rao envisioned a diagnostic chain that not only
+              catered to the lucrative markets but also reached the underserved
+              semi-urban and rural areas of India.
+            </p>
+          </div>
+        </div>
+        <div className=" s5-box s5-box2 ">
+          <div className=" s5-img">
+            <img src="./icons/box.svg" alt="icon" width={50} />
+          </div>
+          <div className=" s5-txt">
+            <p className="para">
+              At Konnect Diagnostics, our team is led by the visionary founder,
+              Dr. Mahesh Rao. With 15 years of experience as an orthopedic
+              surgeon and expertise in the diagnostic business, Dr. Rao has
+              played a pivotal role in shaping our organization. Driven by a
+              passion for providing quality-focused and affordable diagnostic
+              services, Dr. Rao envisioned a diagnostic chain that not only
+              catered to the lucrative markets but also reached the underserved
+              semi-urban and rural areas of India. His goal was to make
+              high-quality diagnostics accessible to everyone, regardless of
+              their geographical location.
+            </p>
+          </div>
+        </div>
+        <div className=" s5-box s5-box3 ">
+          <div className=" s5-img">
+            <img src="./icons/box.svg" alt="icon" width={50} />
+          </div>
+          <div className=" s5-txt">
+            <p className="para">
+              At Konnect Diagnostics, our team is led by the visionary founder,
+              Dr. Mahesh Rao. With 15 years of experience as an orthopedic
+              surgeon and expertise in the diagnostic business, Dr. Rao has
+              played a pivotal role in shaping our organization. Driven by a
+              passion for providing quality-focused and affordable diagnostic
+              services, Dr. Rao envisioned a diagnostic chain that not only
+              catered to the lucrative markets but also reached the underserved
+              semi-urban and rural areas of India. His goal was to make
+              high-quality diagnostics accessible to everyone, regardless of
+              their geographical location.
+            </p>
+          </div>
+        </div>
+      </div>
     </Wrapper>
   );
 };
@@ -148,28 +204,14 @@ const About = () => {
 export default About;
 
 const Wrapper = styled.section`
-  h2 {
-    font-size: 2rem;
-    font-weight: 700;
-    text-align: center;
-  }
   .para-section {
     gap: 15px;
   }
-  .paraH3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #00203c;
-    margin-bottom: 1.5rem;
-  }
-  .para {
-    font-size: 1rem;
-    color: #00203c;
-    margin: 0;
+  .sec-m {
+    margin-bottom: 5rem;
   }
   .container {
     color: #fff;
-    max-width: 75rem;
     padding: 50px 0;
   }
   .flex {
@@ -222,10 +264,12 @@ const Wrapper = styled.section`
   .s3 {
     background-color: #00aeef;
     margin-top: 2rem;
-    height: 300px;
+    height: 250px;
+    h2 {
+      text-align: center;
+    }
   }
   .s3-boxes {
-    margin-top: 50px;
     gap: 3rem;
     justify-content: center;
   }
@@ -245,6 +289,9 @@ const Wrapper = styled.section`
     font-size: 1.2rem;
     font-weight: 900;
   }
+
+  /* -----------------------------Section Four------------------------------ */
+
   .s4 {
     margin-top: 50px;
     height: 300px;
@@ -253,13 +300,53 @@ const Wrapper = styled.section`
     margin-top: 15rem;
   }
   .s4-info {
-    padding: 100px 50px;
+    border-radius: 15px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    z-index: 2;
+    padding: 100px 50px;
   }
   .s4 img {
-    margin-left: 5rem;
+    margin: 5rem 2rem 0;
+    margin-top: -100px;
   }
-  .sec-m {
-    margin-bottom: 5rem;
+  .s4-img {
+    background-color: #00aeef25;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    /* height: 100%; */
+    border-radius: 0 15px 15px 0;
+  }
+
+  /* -----------------------------Section Five------------------------------ */
+
+  .s5 {
+    justify-content: center;
+    img {
+      background-color: #fff;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      border-radius: 100%;
+      padding: 1rem;
+      margin-bottom: 25px;
+      width: 65px;
+    }
+  }
+  .s5-box {
+    width: 50%;
+    justify-content: center;
+  }
+  .s5-box1 {
+    padding-right: 3rem;
+  }
+  .s5-box3 {
+    padding-left: 3rem;
+  }
+  .s5-box2 {
+    border-left: 2px solid #00aeef;
+    border-right: 2px solid #00aeef;
+    padding: 0 3rem;
+  }
+  .s5-box p {
+    padding-top: 1rem;
+    color: #606060;
   }
 `;
