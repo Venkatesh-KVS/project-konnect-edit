@@ -124,7 +124,7 @@ const About = () => {
       {/* -----------------------------Section three------------------------------ */}
       <div class="sec-m s4 container flex flex-r">
         <div className=" s4-info">
-          <span className="">Founder ------</span>
+          <span className="">Founder -----</span>
           <h3>Dr. Mahesh Rao</h3>
           <p className="para">
             At Konnect Diagnostics, our team is led by the visionary founder,
