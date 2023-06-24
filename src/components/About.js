@@ -12,7 +12,7 @@ const About = () => {
       </div>
       <div className="sec sec-1 container flex flex-r">
         <div className="sec-left ">
-          <h3 className="paraH3">We Care About Your Health...</h3>
+          <h3 className="paraH3">We Care About Your Health</h3>
           <div className="para-section flex">
             <p className="para">
               Konnect Diagnostics embarked on its journey in October 2019 with a
@@ -124,7 +124,7 @@ const About = () => {
       {/* -----------------------------Section three------------------------------ */}
       <div class="sec-m s4 container flex flex-r">
         <div className=" s4-info">
-          <span className="">Founder -----</span>
+          <span className="">Founder</span>
           <h3>Dr. Mahesh Rao</h3>
           <p className="para">
             At Konnect Diagnostics, our team is led by the visionary founder,
@@ -253,14 +253,11 @@ const Wrapper = styled.section`
     margin-top: 15rem;
   }
   .s4-info {
-    /* background-color: red; */
-    background-color: antiquewhite;
-
     padding: 100px 50px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
   .s4 img {
-    position: absolute;
-    border: 2px solid red;
+    margin-left: 5rem;
   }
   .sec-m {
     margin-bottom: 5rem;
