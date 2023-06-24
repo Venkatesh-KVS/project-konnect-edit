@@ -17,7 +17,7 @@ import LocateClinic from "./components/LocateClinic";
 function App() {
   return (
     <div className="App ">
-      <Router>
+      <Router basename="/konnect-app">
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
