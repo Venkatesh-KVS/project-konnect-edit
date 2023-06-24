@@ -12,7 +12,6 @@ const Home = () => {
         <HeroSection />
         <SectionTwo />
         <SectionThree />
-
         <SectionFour />
         <SectionFive />
       </div>

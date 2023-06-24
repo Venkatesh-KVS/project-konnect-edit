@@ -1,6 +1,4 @@
 import React from "react";
-// import VideoPlayer from "react-background-video-player";
-
 const imag = {
   calender: "konnect-app/icons/calender.svg",
   box: "/konnect-app/icons/box.svg",

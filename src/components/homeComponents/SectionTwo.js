@@ -6,13 +6,6 @@ const SectionTwo = () => {
     <div>
       <div className="secTwo d-flex align-items-center">
         <div className="container tsts d-flex justify-content-between ">
-          {/* <DynamicImage
-            className="tst-icon-img"
-            imageName={"k.png"}
-            width={150}
-          />
-          <h2 className="tst-title">Test Name</h2> */}
-
           <div className="tst tstOne">
             <img
               // style={{ width: 150, height: 150, borderRadius: 100 / 1 }}
