@@ -11,7 +11,7 @@ const Header = () => {
         <div className="top-nav container d-flex justify-content-between">
           <div className="logo">
             <NavLink to={"/"}>
-              <DynamicImage imageName={"konnect-logo.png"} width={300} />
+              <DynamicImage imageName={"Konnect-Logo.png"} width={300} />
               {/* <img src="./images/konnect-logo.PNG" alt="k-Logo" width={200} /> */}
             </NavLink>
           </div>
