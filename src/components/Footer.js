@@ -183,10 +183,6 @@ const Wrapper = styled.section`
         margin: 0;
         color: #fff;
       }
-      /* .fh-nl img:nth-last-child() {
-        border: 2px solid red;
-        background-color: #fff;
-      } */
     }
     .fh-content p {
       padding: 15px 0;
