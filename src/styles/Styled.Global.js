@@ -10,6 +10,27 @@ export const StyledGlobal = createGlobalStyle`
     padding: 0;
     max-width: 75rem;
   }
+  .flex-r {
+    /* flex-direction: row; */
+  }
+  .navbar-lists {
+    gap: 2.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .top-nav {
+  justify-content: center;
+  align-items: center;
+  margin: 15px auto;
+}
+.register {
+  gap: 10px;
+}
+  .nav-list {
+    text-decoration: none;
+    color: #fff;
+    /* text-transform: uppercase; */
+  }
   h2 {
     font-size: 2rem;
     font-weight: 700;
