@@ -1,9 +1,9 @@
-import React from "react";
+import { styled } from "styled-components";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div>
+    <Wrapper>
       <nav className="navbar navbar-expand-lg   ">
         <div className=" container d-flex justify-content-between">
           <ul className="navbar-lists navbar-nav d-flex">
@@ -18,8 +18,8 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/products" className="nav-list">
-                Products
+              <NavLink to="/tests" className="nav-list">
+                Tests
               </NavLink>
             </li>
             <li>
@@ -59,8 +59,13 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-    </div>
+    </Wrapper>
   );
 };
 
 export default Navbar;
+const Wrapper = styled.section`
+  .navbar {
+    background-color: #00aeef;
+  }
+`;
