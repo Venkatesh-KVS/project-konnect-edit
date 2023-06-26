@@ -4,9 +4,9 @@
   color: #00203c;
   font-family: "Overpass", sans-serif;
 }
-.para {
+/* .para {
   font-size: 1rem;
-}
+} */
 
 /* --------------------------------------------Header-------------------------------------------- */
 .top-nav {
@@ -131,6 +131,9 @@ video {
   font-size: 1rem;
   vertical-align: center;
   margin-bottom: 0;
+}
+.cohp img {
+  width: 30px;
 }
 .book-btn {
   color: #ffffff;
@@ -322,55 +325,4 @@ video {
 }
 .s5-bookAtest {
   margin-top: 50px 0 25px 0;
-}
-
-/* ----------------------------------------- Section Six ------------------------------------------ */
-
-/* ----------------------------------------- Footer ------------------------------------------ */
-.footer-head {
-  background-color: #005bab;
-}
-.fh-content {
-  /* justify-content: center; */
-  align-items: center;
-  padding: 0;
-  gap: 20px;
-}
-.fh {
-  padding: 0;
-  background-color: #005bab;
-}
-.fh-nl {
-  gap: 15px;
-  align-items: center;
-  justify-content: space-evenly;
-}
-.fh-nl-p {
-  margin: 0;
-  color: #fff;
-}
-.fh-content p {
-  padding: 15px 0;
-  font-weight: 300;
-  /* font-size: 14px; */
-  color: #fff;
-  margin: 0;
-}
-.fh-nl img:nth-last-child() {
-  border: 2px solid red;
-  background-color: #fff;
-}
-.fh-content img {
-  width: 25px;
-}
-
-.footer {
-  background-color: #00aeef;
-}
-.footer-navbar-lists {
-  gap: 15px;
-}
-.footer-container {
-  padding: 50px 0 25px 0;
-  justify-content: space-between;
 }
