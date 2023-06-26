@@ -1,11 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import DynamicImage from "./requiredPages/DynamicImage";
+import { styled } from "styled-components";
 
 const Footer = () => {
   return (
     <>
-      <div className="footer">
+      <Wrapper className="footer">
         <div className="footer-head">
           <div className="fh container d-flex justify-content-between">
             <div className="fh-content d-flex ">
@@ -69,27 +70,27 @@ const Footer = () => {
             <ul className="navbar-nav footer-navbar-lists  d-flex">
               <li>
                 <NavLink to="/" className="nav-list">
-                  Home
+                  Book a Test
                 </NavLink>
               </li>
               <li>
                 <NavLink to="/about" className="nav-list">
-                  About
+                  Nearest Center
                 </NavLink>
               </li>
               <li>
                 <NavLink to="/products" className="nav-list">
-                  Products
+                  Download Report
                 </NavLink>
               </li>
               <li>
                 <NavLink to="/cart" className="nav-list">
-                  Cart
+                  Promotions and Discounts
                 </NavLink>
               </li>
               <li>
                 <NavLink to="/services" className="nav-list">
-                  Services
+                  Social Programmes
                 </NavLink>
               </li>
             </ul>
@@ -98,22 +99,17 @@ const Footer = () => {
             <ul className="navbar-nav footer-navbar-lists  d-flex">
               <li>
                 <NavLink to="/" className="nav-list">
-                  Home
+                  Nearest Center
                 </NavLink>
               </li>
               <li>
                 <NavLink to="/about" className="nav-list">
-                  About
+                  Promotions and Discounts
                 </NavLink>
               </li>
               <li>
                 <NavLink to="/products" className="nav-list">
-                  Products
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/cart" className="nav-list">
-                  Cart
+                  Download Report
                 </NavLink>
               </li>
               <li>
@@ -127,12 +123,12 @@ const Footer = () => {
             <ul className="navbar-nav footer-navbar-lists  d-flex">
               <li>
                 <NavLink to="/" className="nav-list">
-                  Home
+                  Download Report
                 </NavLink>
               </li>
               <li>
                 <NavLink to="/about" className="nav-list">
-                  About
+                  Promotions and Discounts
                 </NavLink>
               </li>
               <li>
@@ -142,20 +138,85 @@ const Footer = () => {
               </li>
               <li>
                 <NavLink to="/cart" className="nav-list">
-                  Cart
+                  Promotions and Discounts
                 </NavLink>
               </li>
               <li>
                 <NavLink to="/services" className="nav-list">
-                  Services
+                  Conatct Form
                 </NavLink>
               </li>
             </ul>
           </div>
         </div>
-      </div>
+        <div className="footer-bottom container">
+          <p className="para flex flex-r">Promotions and ions an</p>
+          <p className="para flex flex-r">Prions</p>
+          <p className="para flex flex-r">Promotions and ions an</p>
+        </div>
+      </Wrapper>
     </>
   );
 };
 
 export default Footer;
+
+const Wrapper = styled.section`
+  background-color: #00aeef;
+
+  .footer-head {
+    background-color: #005bab;
+  }
+  .fh-content {
+    align-items: center;
+    padding: 0;
+    gap: 20px;
+  }
+  .fh {
+    padding: 0;
+    background-color: #005bab;
+    .fh-nl {
+      gap: 15px;
+      align-items: center;
+      justify-content: space-evenly;
+      .fh-nl-p {
+        margin: 0;
+        color: #fff;
+      }
+      /* .fh-nl img:nth-last-child() {
+        border: 2px solid red;
+        background-color: #fff;
+      } */
+    }
+    .fh-content p {
+      padding: 15px 0;
+      font-weight: 500;
+      color: #fff;
+      margin: 0;
+      .fh-content img {
+        width: 25px;
+      }
+    }
+  }
+  .footer-container {
+    padding: 50px 0 25px 0;
+    justify-content: space-between;
+  }
+
+  .footer-navbar-lists {
+    font-size: 1rem;
+    gap: 15px;
+  }
+  .nav-list {
+    text-transform: capitalize;
+  }
+  .footer-bottom {
+  }
+  .footer-bottom p {
+    display: inline-block;
+    margin-right: 0.8rem;
+    color: #fff;
+    font-size: 1rem;
+    padding: 1rem 0 1rem 0;
+  }
+`;
