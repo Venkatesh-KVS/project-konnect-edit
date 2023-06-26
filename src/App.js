@@ -13,6 +13,7 @@ import Services from "./components/Services";
 import SingleProduct from "./SingleProduct";
 import Packages from "./components/Packages";
 import LocateClinic from "./components/LocateClinic";
+import Tests from "./components/Tests";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="*" element={<ErrorPage />} />
           <Route path="/about" element={<About />} />
+          <Route path="/tests" element={<Tests />} />
           <Route path="/products" element={<Products />} />
           <Route path="/singleproduct/:id" element={<SingleProduct />} />
           <Route path="/cart" element={<Cart />} />

@@ -1,8 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;500;600;700;800&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;500;600;700;800&display=swap"); */
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Overpass:wght@300;400;500;600;700;800;900&display=swap");
 * {
   color: #00203c;
-  font-family: "Overpass", sans-serif;
+  /* font-family: "Overpass", sans-serif; */
+  font-family: "Niramit", sans-serif;
 }
 /* .para {
   font-size: 1rem;
@@ -27,7 +28,7 @@
 .nav-list {
   text-decoration: none;
   color: #fff;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 .butn {
   background-color: #00aeef;
@@ -50,7 +51,7 @@ span {
   font-family: "Josefin Sans", sans-serif;
 }
 .gyr {
-  width: 23ch;
+  width: 24ch;
   border-right: 2px solid #005bab;
   overflow: hidden;
   white-space: nowrap;
@@ -80,7 +81,7 @@ span {
   align-items: center;
 }
 .hero-sec {
-  justify-content: center;
+  justify-content: space-between;
 }
 .hero-content h1 {
   font-family: "Josefin Sans", sans-serif;
