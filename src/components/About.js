@@ -20,7 +20,7 @@ const About = () => {
               company has rapidly expanded its reach and made significant
               strides in the diagnostics industry. In a remarkable achievement,
               Konnect Diagnostics ac quired the Jagityal center, a strategic
-              move that resulted in an impressive revenue growth of nearly three
+              move that resulted in an impressive... revenue growth of nearly three
               times within a year,...,...
             </p>
             <p className="para">
