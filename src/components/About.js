@@ -20,8 +20,8 @@ const About = () => {
               company has rapidly expanded its reach and made significant
               strides in the diagnostics industry. In a remarkable achievement,
               Konnect Diagnostics ac quired the Jagityal center, a strategic
-              move that resulted in an impressive... revenue growth of nearly three
-              times within a year,...,...
+              move that resulted in an impressive... revenue growth of nearly
+              three times within a year,...,...
             </p>
             <p className="para">
               This milestone demonstrated the company's strong management and
@@ -225,7 +225,7 @@ const Wrapper = styled.section`
         rgba(0, 174, 239, 0),
         rgba(0, 32, 60, 0.6)
       ),
-      url("/konnect-app/images/about-banner.jpg");
+      url("/project-konnect/images/about-banner.jpg");
     background-size: cover;
   }
   .flex-r {
@@ -238,7 +238,7 @@ const Wrapper = styled.section`
   }
   .img-box {
     padding: 0 50px;
-    background: url("/konnect-app/images/sec1-bg.png");
+    background: url("/project-konnect/images/sec1-bg.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;

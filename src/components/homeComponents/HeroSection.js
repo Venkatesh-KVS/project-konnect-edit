@@ -32,7 +32,7 @@ const HeroSection = () => {
       </div>
       <div className="hero-video d-flex">
         <video autoPlay loop muted controls={false}>
-          <source src="/konnect-app/images/hero24.mp4" type="video/mp4" />
+          <source src="/project-konnect/images/hero24.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="gyr my-4">
