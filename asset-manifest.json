@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/konnect-app/static/css/main.4e2ff789.css",
+    "main.js": "/konnect-app/static/js/main.29cd41e1.js",
+    "static/js/787.7437625f.chunk.js": "/konnect-app/static/js/787.7437625f.chunk.js",
+    "index.html": "/konnect-app/index.html",
+    "main.4e2ff789.css.map": "/konnect-app/static/css/main.4e2ff789.css.map",
+    "main.29cd41e1.js.map": "/konnect-app/static/js/main.29cd41e1.js.map",
+    "787.7437625f.chunk.js.map": "/konnect-app/static/js/787.7437625f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4e2ff789.css",
+    "static/js/main.29cd41e1.js"
+  ]
+}
