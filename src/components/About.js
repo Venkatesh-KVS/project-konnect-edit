@@ -160,7 +160,8 @@ const About = () => {
         </div>
         <div className=" s5-box s5-box2 ">
           <div className=" s5-img">
-            <img src="./icons/box.svg" alt="icon" width={50} />
+            {/* <img src="/icons/box.svg" alt="icon" width={50} /> */}
+            <DynamicImage imageName={"/icons/box.svg"} />
           </div>
           <div className=" s5-txt">
             <p className="para">
@@ -171,15 +172,13 @@ const About = () => {
               passion for providing quality-focused and affordable diagnostic
               services, Dr. Rao envisioned a diagnostic chain that not only
               catered to the lucrative markets but also reached the underserved
-              semi-urban and rural areas of India. His goal was to make
-              high-quality diagnostics accessible to everyone, regardless of
-              their geographical location.
+              semi-urban and rural areas of India.
             </p>
           </div>
         </div>
         <div className=" s5-box s5-box3 ">
           <div className=" s5-img">
-            <img src="./icons/box.svg" alt="icon" width={50} />
+            <DynamicImage imageName={"/icons/box.svg"} />
           </div>
           <div className=" s5-txt">
             <p className="para">
@@ -191,8 +190,7 @@ const About = () => {
               services, Dr. Rao envisioned a diagnostic chain that not only
               catered to the lucrative markets but also reached the underserved
               semi-urban and rural areas of India. His goal was to make
-              high-quality diagnostics accessible to everyone, regardless of
-              their geographical location.
+              high-quality diagnostics.
             </p>
           </div>
         </div>

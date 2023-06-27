@@ -149,10 +149,10 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="footer-bottom container">
-          <p className="para flex flex-r">Promotions and ions an</p>
-          <p className="para flex flex-r">Prions</p>
-          <p className="para flex flex-r">Promotions and ions an</p>
+        <div className="footer-bottom container content-box">
+          <p className="para ">Promotions and ions an</p>
+          <p className="para ">Prions</p>
+          <p className="para ">Promotions and ions an</p>
         </div>
       </Wrapper>
     </>
@@ -207,12 +207,13 @@ const Wrapper = styled.section`
     text-transform: capitalize;
   }
   .footer-bottom {
-  }
-  .footer-bottom p {
-    display: inline-block;
-    margin-right: 0.8rem;
-    color: #fff;
-    font-size: 1rem;
-    padding: 1rem 0 1rem 0;
+    padding: 0;
+    p {
+      display: inline-block;
+      margin-right: 0.8rem;
+      color: #fff;
+      font-size: 1rem;
+      /* padding: 1rem 0 1rem 0; */
+    }
   }
 `;

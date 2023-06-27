@@ -1,11 +1,10 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 // import DynamicImage from "./requiredPages/DynamicImage";
-import TestCard from "./homeComponents/TestCard";
+// import TestCard from "./homeComponents/TestCard";
 import { GiHamburgerMenu, GiHeartOrgan } from "react-icons/gi";
 import { HiOutlineFilter } from "react-icons/hi";
 import { CiMenuKebab } from "react-icons/ci";
-import { PiFaders } from "react-icons/pi";
 
 const Tests = () => {
   return (
@@ -20,8 +19,7 @@ const Tests = () => {
         <div className="box-left ">
           <div className="categories box-mb">
             <h4 className="h4-style">Categories</h4>
-            <Link className="active " to="/">
-              <PiFaders />
+            <Link className="active" to="/">
               All
             </Link>
             <Link className="d-flex gap-1" to="/">
@@ -70,7 +68,7 @@ const Tests = () => {
             <Link to="/">Fever </Link>
           </div>
         </div>
-        <div className="box-right">
+        <div className="box-right ">
           <div className="box-right-top">
             <div className="categories  d-flex justify-content-between align-items-center">
               <div className="">
@@ -86,15 +84,58 @@ const Tests = () => {
               </Link>
             </div>
           </div>
-          <div className="box-right-bottom d-flex">
+          <div className="box-right-bottom ">
             <div className="box-mb ">
               {/* <h6>All</h6> */}
-              <div className="tests-comp gap-2">
-                <TestCard />
-                <TestCard />
-                <br />
-                <TestCard />
-                <TestCard />
+              <div className="tst-group d-flex gap-3">
+                <div className="tsts tst-1">
+                  <h6>HbA1c (Glycated Haemoglobin)</h6>
+                  <h3>Rs 450/-</h3>
+                  <hr />
+                  <p className="para">Includes</p>
+                  <p className="para">
+                    Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa
+                  </p>
+                  <hr />
+                  <button className="btn">Book Now</button>
+                </div>
+                <div className="tsts tst-2">
+                  <h6>HbA1c (Glycated Haemoglobin)</h6>
+                  <h3>Rs 450/-</h3>
+                  <hr />
+                  <p className="para">Includes</p>
+                  <p className="para">
+                    Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa
+                  </p>
+                  <hr />
+                  <button className="btn">Book Now</button>
+                </div>
+                <div className="tsts tst-2">
+                  <h6>HbA1c (Glycated Haemoglobin)</h6>
+                  <h3>Rs 450/-</h3>
+                  <hr />
+                  <p className="para">Includes</p>
+                  <p className="para">
+                    Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa
+                  </p>
+                  <hr />
+                  <button className="btn">Book Now</button>
+                </div>
+                <div className="tsts tst-2">
+                  <h6>HbA1c (Glycated Haemoglobin)</h6>
+                  <h3>Rs 450/-</h3>
+                  <hr />
+                  <p className="para">Includes</p>
+                  <p className="para">
+                    Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa
+                  </p>
+                  <hr />
+                  <button className="btn ">Book Now</button>
+                </div>
               </div>
             </div>
           </div>
@@ -107,6 +148,51 @@ const Tests = () => {
 export default Tests;
 
 const Wrapper = styled.section`
+  /* ---------------test cards */
+  .tsts {
+    /* background-color: #00203c; */
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    color: #00203c;
+    border-radius: 15px;
+    padding: 2rem;
+
+    width: 32%;
+    h3 {
+      font-size: 1.5rem;
+      color: #005bab;
+      font-weight: 600;
+    }
+    h6 {
+      font-size: 1rem;
+      color: #00203c;
+      /* font-weight: 600; */
+    }
+    p {
+      color: #00203c;
+      /* font-size: 0.9rem;
+      font-weight: 500; */
+    }
+  }
+  .tst-group {
+    flex-wrap: wrap;
+    padding-top: 1rem;
+  }
+  .btn {
+    color: #fff;
+    font-size: 0.8rem;
+    width: 6rem;
+    background-color: #005bab;
+    justify-content: flex-end;
+  }
+  .para {
+    color: #bebebe;
+  }
+  .btn {
+    float: right;
+  }
+
+  /* ---------------test cards */
+
   .tests-comp {
     overflow: hidden;
   }
@@ -132,9 +218,6 @@ const Wrapper = styled.section`
     margin-bottom: 1.5rem;
   }
   /* ---------------Categories */
-  .Categories svg {
-    background-color: red;
-  }
 
   a.active {
     color: #005bab;
@@ -150,7 +233,7 @@ const Wrapper = styled.section`
     bottom: 0;
     left: 0;
     height: 2px;
-    width: 20%;
+    width: 25%;
     background-color: #005bab;
   }
   .h4-style {
@@ -166,11 +249,12 @@ const Wrapper = styled.section`
         rgba(0, 174, 239, 0),
         rgba(0, 32, 60, 0.6)
       ),
-      url("/project-konnect/images/about-banner.jpg");
+      url("https://img.freepik.com/free-photo/hand-with-protective-gloves-holding-blood-samples-covid-test_23-2148958363.jpg?w=740&t=st=1687859208~exp=1687859808~hmac=491da7442440e03cf55afa8972abd0012801bee4edec64a85a3e75919e4ba541");
     background-size: cover;
+    background-position: bottom center;
   }
   .box-left {
-    width: 20rem;
+    width: 45%;
     height: 100%;
     background-color: #00aeef05;
     border-radius: 15px;
@@ -184,14 +268,13 @@ const Wrapper = styled.section`
   }
 
   .box-right {
-    width: 100%;
     gap: 10;
     border-radius: 15px;
     padding: 0 1.5rem;
   }
+
   .box-right-top {
     padding: 1.5rem;
-    /* background-color: #00aeef10; */
     background: linear-gradient(
       0deg,
       rgba(0, 91, 171, 0),
