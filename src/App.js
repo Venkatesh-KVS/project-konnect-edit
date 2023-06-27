@@ -18,7 +18,7 @@ import Tests from "./components/Tests";
 function App() {
   return (
     <div className="App ">
-      <Router basename="/konnect-app">
+      <Router basename="/project-konnect">
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />

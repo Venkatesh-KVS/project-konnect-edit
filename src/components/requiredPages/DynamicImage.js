@@ -1,7 +1,7 @@
 import React from "react";
 
 const DynamicImage = ({ imageName }) => {
-  const imagePath = `/konnect-app/images/${imageName}`;
+  const imagePath = `/project-konnect/images/${imageName}`;
 
   return (
     <div>
