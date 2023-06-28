@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { GiHamburgerMenu, GiHeartOrgan } from "react-icons/gi";
 import { HiOutlineFilter } from "react-icons/hi";
 import { CiMenuKebab } from "react-icons/ci";
+// import { TestCard, cardData } from "./requiredPages/TestCard";
 
 const Tests = () => {
   return (
@@ -86,51 +87,49 @@ const Tests = () => {
             <div className="box-mb ">
               {/* <h6>All</h6> */}
               <div className="tst-group d-flex gap-3">
+                {/* {cardData.map((card, index) => (
+                  <TestCard
+                    key={index}
+                    title={card.title}
+                    price={card.price}
+                    inv={card.inv}
+                    description={card.description}
+                  />
+                ))} */}
+
                 <div className="tsts tst-1">
-                  <h6>HbA1c (Glycated Haemoglobin)</h6>
+                  <h6>AMMONIA</h6>
                   <h3>Rs 450/-</h3>
                   <hr />
-                  <p className="para">Includes</p>
-                  <p className="para">
-                    Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa
-                  </p>
+                  <p className="para">INVCODE : INV1663</p>
+
                   <hr />
                   <button className="btn">Book Now</button>
                 </div>
                 <div className="tsts tst-2">
-                  <h6>HbA1c (Glycated Haemoglobin)</h6>
-                  <h3>Rs 450/-</h3>
+                  <h6>IHC ER/PR/HER2nu(BREAST PANEL) </h6>
+                  <h3>Rs 4000/-</h3>
                   <hr />
-                  <p className="para">Includes</p>
-                  <p className="para">
-                    Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa
-                  </p>
+                  <p className="para">INVCODE : INV1441</p>
+
                   <hr />
                   <button className="btn">Book Now</button>
                 </div>
                 <div className="tsts tst-2">
-                  <h6>HbA1c (Glycated Haemoglobin)</h6>
-                  <h3>Rs 450/-</h3>
+                  <h6>IHC ER/PR/HER2nu(Breast panel) + Ki-67</h6>
+                  <h3>Rs 5000/-</h3>
                   <hr />
-                  <p className="para">Includes</p>
-                  <p className="para">
-                    Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa
-                  </p>
+                  <p className="para">INVCODE : INV2408</p>
+
                   <hr />
                   <button className="btn">Book Now</button>
                 </div>
                 <div className="tsts tst-2">
-                  <h6>HbA1c (Glycated Haemoglobin)</h6>
-                  <h3>Rs 450/-</h3>
+                  <h6>10X300 SWAB C/S</h6>
+                  <h3>Rs 3000/-</h3>
                   <hr />
-                  <p className="para">Includes</p>
-                  <p className="para">
-                    Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa
-                  </p>
+                  <p className="para">INVCODE : INV2</p>
+
                   <hr />
                   <button className="btn ">Book Now</button>
                 </div>
@@ -154,7 +153,7 @@ const Wrapper = styled.section`
     border-radius: 15px;
     padding: 2rem;
 
-    width: 32%;
+    width: 48%;
     h3 {
       font-size: 1.5rem;
       color: #005bab;

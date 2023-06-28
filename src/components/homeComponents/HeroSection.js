@@ -1,9 +1,5 @@
 import React from "react";
 import DynamicImage from "../requiredPages/DynamicImage";
-// const imag = {
-//   calender: "konnect-app/icons/calender.svg",
-//   box: "/konnect-app/icons/box.svg",
-// };
 
 const HeroSection = () => {
   return (

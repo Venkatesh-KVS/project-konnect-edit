@@ -1,6 +1,7 @@
 import { styled } from "styled-components";
 import { Link } from "react-router-dom";
-import { TestCard, cardData } from "../requiredPages/TestCard";
+// import { TestCard, cardData } from "../requiredPages/TestCard";
+import MyCarousel from "../requiredPages/Carousel";
 // import DynamicImage from "../requiredPages/DynamicImage";
 
 const RadiologyServices = () => {
@@ -23,7 +24,8 @@ const RadiologyServices = () => {
         </div>
       </div>
       <div className="container ">
-        <div className="radiologuServices">
+        <MyCarousel />
+        {/* <div className="radiologuServices">
           <div className="tst-group d-flex">
             {cardData.map((card, index) => (
               <TestCard
@@ -35,7 +37,7 @@ const RadiologyServices = () => {
               />
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </Wrapper>
   );

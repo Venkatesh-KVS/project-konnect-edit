@@ -85,7 +85,7 @@ span {
   color: #00aeef;
 }
 video {
-  width: 385px;
+  width: 25rem;
 }
 .hero-line-2 {
   text-align: center;
@@ -238,6 +238,7 @@ video {
 /* ---------------------------------------- TestCards ------------------------------------------- */
 .cards {
   gap: 25px;
+  margin-bottom: 50px;
 }
 .test-cards {
   gap: 25px;
