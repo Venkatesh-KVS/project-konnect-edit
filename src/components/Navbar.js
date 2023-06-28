@@ -28,9 +28,29 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/services" className="nav-list">
+              {/* <NavLink to="/services" className="nav-list">
                 Services
-              </NavLink>
+              </NavLink> */}
+              <li class="menuItem">
+                <NavLink to="/services" className="nav-list ">
+                  Services
+                </NavLink>
+                <ul class="subMenu">
+                  <li class="subMenuItem menuItem">
+                    <NavLink to="/services" className="nav-list sub-nav-list ">
+                      Health Conditions
+                    </NavLink>
+                  </li>
+                  <li class="subMenuItem menuItem">
+                    <NavLink
+                      to="/radiology-services"
+                      className="nav-list sub-nav-list"
+                    >
+                      Radiology Services
+                    </NavLink>
+                  </li>
+                </ul>
+              </li>
             </li>
             <li>
               <NavLink to="/packages" className="nav-list">
@@ -65,6 +85,40 @@ const Navbar = () => {
 
 export default Navbar;
 const Wrapper = styled.section`
+  .menuItem {
+    list-style: none;
+    position: relative;
+    /* z-index: 2; */
+    &:hover .subMenu {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px;
+    }
+  }
+
+  .subMenu {
+    width: 200px;
+    display: none;
+    /* left: 0;
+    top: 0; */
+    background-color: #00aeef;
+    position: absolute;
+    top: 1.8rem;
+
+    /* z-index: 1; */
+  }
+  .sub-nav-list {
+    padding: 10px;
+    /* margin-bottom: 2px solid red; */
+    &:hover {
+      padding-bottom: 0;
+      transition: 0.3s;
+      border-bottom: 1px solid #fff;
+      overflow: hidden;
+    }
+  }
+
   .navbar {
     background-color: #00aeef;
   }

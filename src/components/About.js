@@ -218,6 +218,8 @@ const Wrapper = styled.section`
   }
   .banner-bg {
     height: 15em;
+    display: flex;
+    align-items: center;
     background: linear-gradient(
         0deg,
         rgba(0, 174, 239, 0),
@@ -225,6 +227,9 @@ const Wrapper = styled.section`
       ),
       url("/project-konnect/images/about-banner.jpg");
     background-size: cover;
+    .banner {
+      color: #fff;
+    }
   }
   .flex-r {
     flex-direction: row;

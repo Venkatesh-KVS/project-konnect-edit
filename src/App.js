@@ -14,6 +14,7 @@ import SingleProduct from "./SingleProduct";
 import Packages from "./components/Packages";
 import LocateClinic from "./components/LocateClinic";
 import Tests from "./components/Tests";
+import RadiologyServices from "./components/services/RadiologyServices";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/packages" element={<Packages />} />
           <Route path="/locate-clinic" element={<LocateClinic />} />
+          <Route path="/radiology-services" element={<RadiologyServices />} />
         </Routes>
         <Footer />
       </Router>

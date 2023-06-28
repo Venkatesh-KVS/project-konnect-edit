@@ -1,7 +1,5 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-// import DynamicImage from "./requiredPages/DynamicImage";
-// import TestCard from "./homeComponents/TestCard";
 import { GiHamburgerMenu, GiHeartOrgan } from "react-icons/gi";
 import { HiOutlineFilter } from "react-icons/hi";
 import { CiMenuKebab } from "react-icons/ci";

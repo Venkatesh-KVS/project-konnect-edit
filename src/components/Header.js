@@ -11,7 +11,6 @@ const Header = () => {
           <div className="logo">
             <NavLink to={"/"}>
               <DynamicImage imageName={"konnect-logo.png"} width={300} />
-              {/* <img src="./images/konnect-logo.PNG" alt="k-Logo" width={200} /> */}
             </NavLink>
           </div>
           <div className="register d-flex">
