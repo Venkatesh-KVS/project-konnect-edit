@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { GiHamburgerMenu, GiHeartOrgan } from "react-icons/gi";
+import { BiChevronsRight } from "react-icons/bi";
 import { HiOutlineFilter } from "react-icons/hi";
 import { CiMenuKebab } from "react-icons/ci";
 // import { TestCard, cardData } from "./requiredPages/TestCard";
@@ -8,10 +9,14 @@ import { CiMenuKebab } from "react-icons/ci";
 const Tests = () => {
   return (
     <Wrapper className="tests">
-      <div className="banner-bg ">
-        <div className="container flex">
+      <div className="banner-bg d-flex">
+        <div className="banner-cnt container flex">
           <h2>Tests</h2>
-          <h6>Home/Tests</h6>
+          <p>
+            <span>Home</span>
+            <BiChevronsRight />
+            tests
+          </p>
         </div>
       </div>
       <div className="container tests-container d-flex">
@@ -145,6 +150,34 @@ const Tests = () => {
 export default Tests;
 
 const Wrapper = styled.section`
+  .banner-cnt {
+    h2 {
+      font-weight: 600;
+      color: #005bab;
+      font-size: 2rem;
+    }
+    p {
+      font-size: 15px;
+      color: #fff;
+      span {
+        color: #00203c;
+        font-family: inherit;
+      }
+    }
+  }
+  .banner-bg {
+    height: 15em;
+    align-items: center;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 32, 60, 0),
+        rgba(0, 174, 239, 0.3)
+      ),
+      url("https://img.freepik.com/free-photo/hand-with-protective-gloves-holding-blood-samples-covid-test_23-2148958363.jpg?w=740&t=st=1687859208~exp=1687859808~hmac=491da7442440e03cf55afa8972abd0012801bee4edec64a85a3e75919e4ba541");
+    background-size: cover;
+    background-position: bottom center;
+  }
+
   /* ---------------test cards */
   .tsts {
     /* background-color: #00203c; */
@@ -239,17 +272,7 @@ const Wrapper = styled.section`
     margin-bottom: 0.8rem;
     color: #005bab;
   }
-  .banner-bg {
-    height: 15em;
-    background: linear-gradient(
-        0deg,
-        rgba(0, 174, 239, 0),
-        rgba(0, 32, 60, 0.6)
-      ),
-      url("https://img.freepik.com/free-photo/hand-with-protective-gloves-holding-blood-samples-covid-test_23-2148958363.jpg?w=740&t=st=1687859208~exp=1687859808~hmac=491da7442440e03cf55afa8972abd0012801bee4edec64a85a3e75919e4ba541");
-    background-size: cover;
-    background-position: bottom center;
-  }
+
   .box-left {
     width: 45%;
     height: 100%;

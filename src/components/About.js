@@ -1,48 +1,40 @@
 import { styled } from "styled-components";
 import DynamicImage from "./requiredPages/DynamicImage";
+import { BiChevronsRight } from "react-icons/bi";
+import { CiHospital1 } from "react-icons/ci";
 
 const About = () => {
   return (
     <Wrapper className="about">
-      <div className="banner-bg ">
-        <div className="container flex">
+      <div className="banner-bg d-flex">
+        <div className="banner-cnt container flex ">
           <h2>About</h2>
-          <h6>Home/about</h6>
+          <h6>
+            <span>Home</span>
+            <BiChevronsRight />
+            about
+          </h6>
         </div>
       </div>
-      <div className="sec sec-1 container flex flex-r">
+      <div className="sec-1 container flex flex-r">
         <div className="sec-left ">
-          <h3 className="paraH3">We Care About Your Health</h3>
+          <h3 className="paraH3 hdng2">We Care About Your Health</h3>
           <div className="para-section flex">
             <p className="para">
-              Konnect Diagnostics embarked on its journey in October 2019 with a
-              single center located in Kompally. Since its inception, the
-              company has rapidly expanded its reach and made significant
-              strides in the diagnostics industry. In a remarkable achievement,
-              Konnect Diagnostics ac quired the Jagityal center, a strategic
-              move that resulted in an impressive... revenue growth of nearly
-              three times within a year,...,...
+              Konnect Diagnostics started in October 2019 with one center in
+              Kompally and has since grown rapidly in the diagnostics industry.
+              Our notable achievement was acquiring the Jagityal center,
+              resulting in a significant revenue growth within a year. This
+              success showcased the company's strong management and commitment
+              to success. Building on this accomplishment, Konnect Diagnostics
+              has a visionary plan to establish a comprehensive network of
+              diagnostic centers spanning both urban and rural areas.
             </p>
             <p className="para">
-              This milestone demonstrated the company's strong management and
-              commitment to success. Building upon this success, Konnect
-              Diagnostics set out to implement its visionary plan of
-              establishing a comprehensive network of diagnostic centers spans
-              across urban and rural areas, establishing centers from BN Reddy
-              Nagar and Boduppal in urban regions to Suryapet and Sircilla in
-              rural areas. By recognizing the importance of accessibility to
-              quality healthcare services, the company aims to bridge the gap
-              between urban and rural populations, ensuring that comprehensive
-              diagnostics are available to all.
-            </p>
-            <p className="para">
-              Konnect Diagnostics remains dedicated to delivering accurate and
-              reliable diagnostic solutions while continuously expanding its
-              footprint across diverse locations. With a focus on innovation,
-              customer satisfaction, and community well-being, the company
-              strives to make a positive impact on healthcare accessibility and
-              contribute to the overall well-being of individuals and
-              communities.
+              We established centers in BN Reddy Nagar and Boduppal in urban
+              regions, as well as Suryapet and Sircilla in rural areas. The
+              company aims to bridge the gap between urban and rural populations
+              by providing accessible and high-quality healthcare services.
             </p>
           </div>
         </div>
@@ -53,13 +45,30 @@ const About = () => {
           />
         </div>
       </div>
+
+      <div className="container p-0 d-flex align-items-center">
+        <div className="asafj p-5">
+          <div className="img-box w-50"></div>
+          <h3>
+            Konnect Diagnostics remains dedicated to delivering accurate and
+            reliable diagnostic solutions{" "}
+          </h3>
+          <p className="sw-50">
+            While expanding their presence in diverse locations. We prioritize
+            innovation, customer satisfaction, and community well-being, aiming
+            to have a positive impact on healthcare accessibility and the
+            overall well-being of individuals and communities.
+          </p>
+        </div>
+      </div>
+
       {/* -----------------------------Section Two------------------------------ */}
       <div className="sec sec-2 container flex flex-r">
         <div className="img-box ">
           <DynamicImage imageName={"about-2.jpg"} />
         </div>
         <div className="sec-left ">
-          <h3 className="paraH3">Why Konnect Diagnostics</h3>
+          <h3 className="paraH3 mb-3">Why Konnect Diagnostics</h3>
           <div className="flex para-section">
             <p className="para para-box flex flex-r ">
               <DynamicImage imageName={"/icons/box.svg"} />
@@ -123,7 +132,7 @@ const About = () => {
       <div class="sec-m s4 container flex flex-r">
         <div className=" s4-info">
           <span className="">Founder -----</span>
-          <h3>Dr. Mahesh Rao</h3>
+          <h3 className="hdng2">Dr. Mahesh Rao</h3>
           <p className="para">
             At Konnect Diagnostics, our team is led by the visionary founder,
             Dr. Mahesh Rao. With 15 years of experience as an orthopedic surgeon
@@ -143,54 +152,38 @@ const About = () => {
       <div className="sec-m s5 container flex flex-r">
         <div className=" s5-box s5-box1 ">
           <div className=" s5-img">
-            <DynamicImage imageName={"/icons/box.svg"} />
+            {/* <DynamicImage imageName={"/icons/box.svg"} /> */}
+            <CiHospital1 className="icon-svg" />
           </div>
           <div className=" s5-txt">
             <p className="para">
-              At Konnect Diagnostics, our team is led by the visionary founder,
-              Dr. Mahesh Rao. With 15 years of experience as an orthopedic
-              surgeon and expertise in the diagnostic business, Dr. Rao has
-              played a pivotal role in shaping our organization. Driven by a
-              passion for providing quality-focused and affordable diagnostic
-              services, Dr. Rao envisioned a diagnostic chain that not only
-              catered to the lucrative markets but also reached the underserved
-              semi-urban and rural areas of India.
+              Konnect Diagnostics started with one center in Kompally and
+              expanded to multiple locations, forming a partnership with
+              PathLabs to enhance diagnostic capabilities
             </p>
           </div>
         </div>
         <div className=" s5-box s5-box2 ">
           <div className=" s5-img">
-            {/* <img src="/icons/box.svg" alt="icon" width={50} /> */}
-            <DynamicImage imageName={"/icons/box.svg"} />
+            <CiHospital1 className="icon-svg" />
           </div>
           <div className=" s5-txt">
             <p className="para">
-              At Konnect Diagnostics, our team is led by the visionary founder,
-              Dr. Mahesh Rao. With 15 years of experience as an orthopedic
-              surgeon and expertise in the diagnostic business, Dr. Rao has
-              played a pivotal role in shaping our organization. Driven by a
-              passion for providing quality-focused and affordable diagnostic
-              services, Dr. Rao envisioned a diagnostic chain that not only
-              catered to the lucrative markets but also reached the underserved
-              semi-urban and rural areas of India.
+              Driven by our passion for innovation, we introduced a
+              groundbreaking addition to our diagnostic chain – the
+              first-of-its-kind Fetal Medicine center.
             </p>
           </div>
         </div>
         <div className=" s5-box s5-box3 ">
           <div className=" s5-img">
-            <DynamicImage imageName={"/icons/box.svg"} />
+            <CiHospital1 className="icon-svg" />
           </div>
           <div className=" s5-txt">
             <p className="para">
-              At Konnect Diagnostics, our team is led by the visionary founder,
-              Dr. Mahesh Rao. With 15 years of experience as an orthopedic
-              surgeon and expertise in the diagnostic business, Dr. Rao has
-              played a pivotal role in shaping our organization. Driven by a
-              passion for providing quality-focused and affordable diagnostic
-              services, Dr. Rao envisioned a diagnostic chain that not only
-              catered to the lucrative markets but also reached the underserved
-              semi-urban and rural areas of India. His goal was to make
-              high-quality diagnostics.
+              Our journey is a testament to our dedication to delivering
+              exceptional patient care, pushing the boundaries of innovation,
+              and expanding our reach to touch more lives
             </p>
           </div>
         </div>
@@ -202,8 +195,41 @@ const About = () => {
 export default About;
 
 const Wrapper = styled.section`
+  h3.hdng2 {
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .asafj {
+    background: url("https://demo.voidcoders.com/htmldemo/medhelpV2/medhelp-center/assets/images/hero-bg1.jpg");
+    background-position: center top;
+    height: 500px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h3 {
+      width: 50%;
+      font-weight: bold;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    p {
+      width: 50%;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 22px;
+      letter-spacing: 0;
+      margin-bottom: 0;
+      color: #000;
+      line-height: 30px;
+      -webkit-font-smoothing: antialiased;
+      -webkit-text-size-adjust: 100%;
+    }
+  }
   .para-section {
-    gap: 15px;
+    gap: 10px;
   }
   .sec-m {
     margin-bottom: 5rem;
@@ -216,20 +242,29 @@ const Wrapper = styled.section`
     display: flex;
     flex-direction: column;
   }
+  .banner-cnt {
+    h2 {
+      color: #005bab;
+      font-size: 2rem;
+    }
+    h6 {
+      font-size: 15px;
+      span {
+        color: #00aeef;
+        font-family: inherit;
+      }
+    }
+  }
   .banner-bg {
     height: 15em;
-    display: flex;
     align-items: center;
     background: linear-gradient(
         0deg,
-        rgba(0, 174, 239, 0),
-        rgba(0, 32, 60, 0.6)
+        rgba(0, 32, 60, 0),
+        rgba(0, 174, 239, 0.3)
       ),
       url("/project-konnect/images/about-banner.jpg");
     background-size: cover;
-    .banner {
-      color: #fff;
-    }
   }
   .flex-r {
     flex-direction: row;
@@ -249,6 +284,7 @@ const Wrapper = styled.section`
   .sec {
     gap: 50px;
     overflow: hidden;
+    margin: 25px auto;
   }
   .para-box {
     gap: 1.5rem;
@@ -265,9 +301,10 @@ const Wrapper = styled.section`
 
   /* -----------------------------Section three------------------------------ */
   .s3 {
-    background-color: #00aeef;
+    // background-color: #00aeef;
+    background-image: linear-gradient(to bottom, #00aeef 50%, white 50%);
     margin-top: 2rem;
-    height: 250px;
+    // height: 250px;
     h2 {
       text-align: center;
     }
@@ -275,14 +312,15 @@ const Wrapper = styled.section`
   .s3-boxes {
     gap: 3rem;
     justify-content: center;
+    padding: 20px;
   }
   .s3-box {
     background-color: #fff;
-    padding: 25px;
+    padding: 30px;
     margin: 25px 0 0 0;
     border-radius: 1rem;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    width: 30rem;
+    width: 50%;
     gap: 20px;
   }
   .s3-box img {
@@ -296,11 +334,11 @@ const Wrapper = styled.section`
   /* -----------------------------Section Four------------------------------ */
 
   .s4 {
-    margin-top: 50px;
+    margin-top: 0px;
     height: 300px;
     justify-content: center;
     align-items: center;
-    margin-top: 15rem;
+    /* margin-top: 15rem; */
   }
   .s4-info {
     border-radius: 15px;
@@ -313,7 +351,7 @@ const Wrapper = styled.section`
     margin-top: -100px;
   }
   .s4-img {
-    background-color: #00aeef25;
+    background-color: #00aeef;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     /* height: 100%; */
     border-radius: 0 15px 15px 0;
@@ -323,33 +361,94 @@ const Wrapper = styled.section`
 
   .s5 {
     justify-content: center;
-    img {
-      background-color: #fff;
-      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-      border-radius: 100%;
-      padding: 1rem;
-      margin-bottom: 25px;
-      width: 65px;
+    margin: 25px auto;
+    .icon-svg {
+      width: 50px;
+      height: 50px;
+      fill: #00aeef;
     }
   }
   .s5-box {
-    width: 50%;
-    justify-content: center;
+    display: block;
+    position: relative;
+    // max-width: 262px;
+    background-color: #f2f8f9;
+    border-radius: 4px;
+    padding: 32px 24px;
+    margin: 12px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+  }
+  .s5-box:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -26px;
+    right: -26px;
+    background: #00aeef;
+    height: 52px;
+    width: 52px;
+    border-radius: 32px;
+    transform-origin: 50% 50%;
+    transition: transform 0.25s ease-out;
   }
   .s5-box1 {
-    padding-right: 3rem;
+    padding: 2rem;
   }
   .s5-box3 {
-    padding-left: 3rem;
+    padding: 1rem;
   }
   .s5-box2 {
-    border-left: 2px solid #00aeef;
-    border-right: 2px solid #00aeef;
-    padding: 0 3rem;
+    padding: 2rem;
   }
   .s5-box p {
     padding-top: 1rem;
     color: #606060;
   }
+
+  // ---------
+  p.para {
+    font-weight: normal;
+    font-size: 1rem;
+    /* line-height: 32px; */
+    letter-spacing: 0;
+    margin-bottom: 0;
+    color: #000;
+    line-height: 30px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+  }
 `;
+
+// .card1 {
+//   display: block;
+//   position: relative;
+//   max-width: 262px;
+//   background-color: #f2f8f9;
+//   border-radius: 4px;
+//   padding: 32px 24px;
+//   margin: 12px;
+//   text-decoration: none;
+//   z-index: 0;
+//   overflow: hidden;
+
+//   &:before {
+//     content: "";
+//     position: absolute;
+//     z-index: -1;
+//     top: -16px;
+//     right: -16px;
+//     background: #00838d;
+//     height: 32px;
+//     width: 32px;
+//     border-radius: 32px;
+//     transform: scale(1);
+//     transform-origin: 50% 50%;
+//     transition: transform 0.25s ease-out;
+//   }
+
+//   &:hover:before {
+//     transform: scale(21);
+//   }
+// }
