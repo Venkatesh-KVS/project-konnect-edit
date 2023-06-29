@@ -46,4 +46,5 @@ export const StyledGlobal = createGlobalStyle`
     /* color: #00203c; */
     margin-bottom: 1.5rem;
   }
+ 
 `;

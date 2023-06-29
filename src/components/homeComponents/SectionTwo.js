@@ -37,10 +37,10 @@ const SectionTwo = () => {
           <div className="tst tstFour ">
             <img
               className="tst-icon"
-              src="/project-konnect/images/icons/download-report.svg"
+              src="/project-konnect/images/icons/house.svg"
               alt="test-icon"
             ></img>
-            <h2 className="tst-title">Test Name</h2>
+            <h2 className="tst-title">Home Collection</h2>
           </div>
 
           <div className="tst tstFive ">
