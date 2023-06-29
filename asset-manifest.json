@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/project-konnect/static/css/main.b9465faa.css",
-    "main.js": "/project-konnect/static/js/main.b44f2e12.js",
+    "main.css": "/project-konnect/static/css/main.b99c0e52.css",
+    "main.js": "/project-konnect/static/js/main.2cbeb977.js",
     "static/js/787.7437625f.chunk.js": "/project-konnect/static/js/787.7437625f.chunk.js",
     "index.html": "/project-konnect/index.html",
-    "main.b9465faa.css.map": "/project-konnect/static/css/main.b9465faa.css.map",
-    "main.b44f2e12.js.map": "/project-konnect/static/js/main.b44f2e12.js.map",
+    "main.b99c0e52.css.map": "/project-konnect/static/css/main.b99c0e52.css.map",
+    "main.2cbeb977.js.map": "/project-konnect/static/js/main.2cbeb977.js.map",
     "787.7437625f.chunk.js.map": "/project-konnect/static/js/787.7437625f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b9465faa.css",
-    "static/js/main.b44f2e12.js"
+    "static/css/main.b99c0e52.css",
+    "static/js/main.2cbeb977.js"
   ]
 }
