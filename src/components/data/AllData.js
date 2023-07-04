@@ -1,38 +1,38 @@
 export const organImages = [
   {
-    src: "project-konnect/images/organs/Heart.png",
+    src: "/project-konnect/images/organs/Heart.png",
     alt: "Heart",
   },
   {
-    src: "project-konnect/images/organs/Diabetes.png",
+    src: "/project-konnect/images/organs/Diabetes.png",
     alt: "Diabetes",
   },
   {
-    src: "project-konnect/images/organs/Allergy.png",
+    src: "/project-konnect/images/organs/Allergy.png",
     alt: "Allergy",
   },
   {
-    src: "project-konnect/images/organs/Kidneys.png",
+    src: "/project-konnect/images/organs/Kidneys.png",
     alt: "Kidneys",
   },
   {
-    src: "project-konnect/images/organs/Pregnancy.png",
+    src: "/project-konnect/images/organs/Pregnancy.png",
     alt: "Pregnancy",
   },
   {
-    src: "project-konnect/images/organs/Lungs.png",
+    src: "/project-konnect/images/organs/Lungs.png",
     alt: "Lungs",
   },
   {
-    src: "project-konnect/images/organs/Fever.png",
+    src: "/project-konnect/images/organs/Fever.png",
     alt: "Fever",
   },
   {
-    src: "project-konnect/images/organs/Prostate.png",
+    src: "/project-konnect/images/organs/Prostate.png",
     alt: "Prostate",
   },
   {
-    src: "project-konnect/images/organs/Thyroid.png",
+    src: "/project-konnect/images/organs/Thyroid.png",
     alt: "Thyroid",
   },
 ];
