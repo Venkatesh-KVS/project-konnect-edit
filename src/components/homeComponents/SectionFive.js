@@ -1,5 +1,5 @@
 import React from "react";
-import TestCardSample from "./TestCardSample";
+import PackagesCard from "./PackagesCard";
 
 const styles = {
   header: {
@@ -21,9 +21,24 @@ const SectionFive = () => {
             <h2>Health Packages</h2>
           </div>
           <div className="cards d-flex">
-            <TestCardSample />
-            <TestCardSample />
-            <TestCardSample />
+            <PackagesCard
+              name="HbA1c (Glycated Haemoglobin)"
+              price="Rs 450"
+              invCode="Includes"
+              description="Excepteur sint occaecat cupidatat non proident"
+            />
+            <PackagesCard
+              name="HbA1c (Glycated Haemoglobin)"
+              price="Rs 450"
+              invCode="Includes"
+              description="Excepteur sint occaecat cupidatat non proident"
+            />
+            <PackagesCard
+              name="HbA1c (Glycated Haemoglobin)"
+              price="Rs 450"
+              invCode="Includes"
+              description="Excepteur sint occaecat cupidatat non proident"
+            />
           </div>
         </div>
       </div>

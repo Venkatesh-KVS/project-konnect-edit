@@ -15,6 +15,7 @@ const MyCarousel = () => {
         centerMode
         centerSlidePercentage={33.33}
         selectedItem={0}
+        showArrows={true}
       >
         {cardData.map((card, index) => (
           <TestCard
@@ -36,6 +37,27 @@ const Wrapper = styled.section`
     background-color: #005bab;
   }
   .control-arrow {
-    display: none;
+    /* display: none; */
+    color: red;
+    background-color: red;
+  }
+  .control-next {
+    &::before {
+      /* background-color: red; */
+      color: #005bab;
+      margin: 50px;
+      &:hover {
+        background-color: red;
+      }
+    }
+    &:focus {
+      /* background-color: red; */
+    }
+    button {
+      border: 2px solid #005bab;
+    }
+  }
+  .carousel-slider ul {
+    /* background-color: red; */
   }
 `;

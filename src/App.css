@@ -1,10 +1,9 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;500;600;700;800&display=swap"); */
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Overpass:wght@300;400;500;600;700;800;900&display=swap");
 * {
   color: #00203c;
-  /* font-family: "Overpass", sans-serif; */
-  font-family: "Niramit", sans-serif;
+  /* font-family: "Niramit", sans-serif; */
+  font-family: 'Quicksand', sans-serif;
 }
+
 
 /* --------------------------------------------Header-------------------------------------------- */
 .top-nav {
@@ -39,7 +38,7 @@
 
 
 /* ----------------------------------------- Section two ------------------------------------------ */
-.secTwo {
+/* .secTwo {
   height: 450px;
 }
 .tst {
@@ -74,22 +73,18 @@
   color: #fff;
   font-size: 1.2rem;
   text-align: center;
-}
+} */
 
 /* ------------------------------------ Section three ------------------------------------------ */
 .secThree-img img {
   width: auto;
   max-width: 100%;
   object-fit: cover;
-  /* border: 2px solid red; */
 }
-/* .secThree-img {
-  flex-shrink: 6;
-} */
 
 .secThree {
   background-color: rgb(255, 255, 255);
-  margin-top: -10rem;
+  /* margin-top: -10rem; */
   /* gap: 50px; */
   padding: 0;
   border-radius: 25px;

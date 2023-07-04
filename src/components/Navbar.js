@@ -85,10 +85,21 @@ const Navbar = () => {
 
 export default Navbar;
 const Wrapper = styled.section`
+  .nav-list {
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    line-height: 1.8;
+    transition: 0.3s;
+    &:hover {
+      border-bottom: 2px solid #fff;
+    }
+  }
   .menuItem {
     list-style: none;
     position: relative;
     /* z-index: 2; */
+
     &:hover .subMenu {
       display: flex;
       flex-direction: column;
@@ -98,7 +109,7 @@ const Wrapper = styled.section`
   }
 
   .subMenu {
-    width: 200px;
+    width: 250px;
     display: none;
     /* left: 0;
     top: 0; */
@@ -109,7 +120,9 @@ const Wrapper = styled.section`
     /* z-index: 1; */
   }
   .sub-nav-list {
-    padding: 10px;
+    padding: 15px;
+    font-size: 16px;
+
     /* margin-bottom: 2px solid red; */
     &:hover {
       padding-bottom: 0;

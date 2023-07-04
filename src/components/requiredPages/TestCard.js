@@ -77,10 +77,10 @@ export const TestCard = ({ title, price, inv }) => {
 const Wrapper = styled.section`
   .tstCards {
     flex-wrap: wrap;
-    /* margin-bottom: 50px; */
-    height: 100%;
-    margin: 25px 0 50px 0;
-    background-color: #005bab0d;
+    text-align: left;
+    /* margin: 25px 0 50px 0; */
+    background-color: #fff;
+    border: 2px solid #00aeef;
     // box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     color: #fff;
     border-radius: 4px;
@@ -90,6 +90,7 @@ const Wrapper = styled.section`
     position: relative;
     z-index: 0;
   }
+
   .go-corner {
     display: flex;
     align-items: center;

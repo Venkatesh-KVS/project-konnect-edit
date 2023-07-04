@@ -7,7 +7,7 @@ import MyCarousel from "../requiredPages/Carousel";
 const RadiologyServices = () => {
   return (
     <Wrapper>
-      <div className="banner-bg ">
+      <div className="rs banner-bg ">
         <div className="container banner">
           <h6>
             <span>
@@ -23,21 +23,8 @@ const RadiologyServices = () => {
           </p>
         </div>
       </div>
-      <div className="container ">
+      <div className="rs-body container ">
         <MyCarousel />
-        {/* <div className="radiologuServices">
-          <div className="tst-group d-flex">
-            {cardData.map((card, index) => (
-              <TestCard
-                key={index}
-                title={card.title}
-                price={card.price}
-                inv={card.inv}
-                description={card.description}
-              />
-            ))}
-          </div>
-        </div> */}
       </div>
     </Wrapper>
   );
@@ -82,6 +69,9 @@ const Wrapper = styled.section`
         width: 30%;
       }
     }
+  }
+  .rs-body {
+    margin: 50px auto;
   }
   /* ---------------test cards */
   /*  */
