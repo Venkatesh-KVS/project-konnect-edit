@@ -16,7 +16,7 @@ const OrganCarousel = ({ images }) => {
       >
         <div className="organs d-flex gap-3 flex-wrap ">
           {images.map((image, index) => (
-            <div key={index}>
+            <div className="org-item" key={index}>
               <img src={image.src} alt={image.alt} />
               <p>{image.alt}</p>
             </div>
@@ -35,34 +35,25 @@ const Wrapper = styled.section`
     cursor: progress;
   }
   .carousel-root {
-    width: 100%;
-    /* .control-arrow {
-      display: none;
-    } */
-    .dot {
-      color: red;
-      border: 2px solid red;
-    }
+    /* width: 100%; */
+
     .carousel .slider {
-      padding: 0 25px 50px 25px;
+      /* padding: 0 25px 50px 25px; */
       margin: 0 25px;
     }
   }
   .organs {
+    .org-item {
+      &:hover {
+        background-color: #005bab10;
+      }
+      &:hover p {
+        color: ${({ theme }) => theme.colors.primary};
+      }
+    }
     img {
       width: 50px;
       margin: 10px;
-
-      &:active p {
-        color: ${({ theme }) => theme.colors.secondary};
-      }
-    }
-    p {
-      color: ${({ theme }) => theme.colors.text};
-    }
-    &:hover p {
-      /* background-color: #005bab; */
-      color: ${({ theme }) => theme.colors.primary};
     }
   }
 `;

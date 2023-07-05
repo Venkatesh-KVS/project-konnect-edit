@@ -1,6 +1,7 @@
 export const organImages = [
   {
     src: "/project-konnect/images/organs/Heart.png",
+    organ: "/",
     alt: "Heart",
   },
   {
