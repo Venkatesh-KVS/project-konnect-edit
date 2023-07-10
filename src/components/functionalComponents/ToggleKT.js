@@ -78,32 +78,6 @@ const Wrapper = styled.section`
     .kt-searchBox {
       /* background-color: rebeccapurple; */
       gap: 25px;
-      .cart-icon {
-        position: relative;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        display: flex;
-        svg {
-          font-size: 30px;
-          fill: ${({ theme }) => theme.colors.primary};
-        }
-        span {
-          position: absolute;
-          color: ${({ theme }) => theme.colors.primary};
-
-          top: -10px;
-          height: 15px;
-          width: 15px;
-          /* background-color: red; */
-          align-items: center;
-          text-align: center;
-          justify-content: center;
-          margin: 0;
-          font-size: 1rem;
-          font-weight: 600;
-        }
-      }
 
       .filterBy {
         align-items: center;

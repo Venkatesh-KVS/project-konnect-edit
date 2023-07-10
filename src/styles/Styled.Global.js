@@ -3,8 +3,10 @@ import { createGlobalStyle } from "styled-components";
 export const StyledGlobal = createGlobalStyle`
   
   body {
-    margin-top:5rem;
+    /* margin-top:5rem; */
     padding: 0; 
+  background-color: #202124;
+
   }
   .container {
     padding: 0;

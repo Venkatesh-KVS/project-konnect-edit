@@ -66,22 +66,9 @@ const Navbar = () => {
           <div className="cart-icon">
             <NavLink to="/cart" className="cart-icon-box">
               <FaShoppingCart className="cart-icon" />
+              {/* <span>0</span> */}
             </NavLink>
           </div>
-          {/* <div className="cart-icon">
-            <NavLink to="/cart" className="nav-list">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                height="25"
-                fill="#ffffff"
-                class="bi bi-cart"
-                viewBox="0 0 16 16"
-              >
-                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
-              </svg>
-            </NavLink>
-          </div> */}
         </div>
       </nav>
     </Wrapper>
@@ -90,6 +77,32 @@ const Navbar = () => {
 
 export default Navbar;
 const Wrapper = styled.section`
+  .cart-icon {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    svg {
+      font-size: 25px;
+      fill: ${({ theme }) => theme.colors.white};
+    }
+    span {
+      position: absolute;
+      color: ${({ theme }) => theme.colors.white};
+
+      top: -15px;
+      height: 15px;
+      width: 15px;
+      /* background-color: red; */
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      margin: 0;
+      font-size: 15px;
+      font-weight: 600;
+    }
+  }
   .nav-list {
     font-size: 18px;
     font-weight: 500;
