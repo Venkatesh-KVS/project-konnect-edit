@@ -1,7 +1,8 @@
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { styled } from "styled-components";
-import { TestCard, cardData } from "../requiredPages/TestCard";
+import { TestCard } from "../requiredPages/TestCard";
+import { testsData } from "../data/AllData";
 
 const MyCarousel = () => {
   return (
@@ -17,7 +18,7 @@ const MyCarousel = () => {
         selectedItem={0}
         showArrows={true}
       >
-        {cardData.map((card, index) => (
+        {testsData.map((card, index) => (
           <TestCard
             key={index}
             title={card.title}

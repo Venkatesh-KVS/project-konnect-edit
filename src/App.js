@@ -16,6 +16,7 @@ import Packages from "./components/Packages";
 import LocateClinic from "./components/LocateClinic";
 import Tests from "./components/Tests";
 import RadiologyServices from "./components/services/RadiologyServices";
+import { CartProvider } from "react-use-cart";
 
 // const mysql = require("mysql2");
 // const connectSQLdb = require("./server/controller/mysql_controller");
@@ -34,24 +35,29 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <div className="App ">
-        <Router basename="/project-konnect">
-          <Header />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="*" element={<ErrorPage />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/tests" element={<Tests />} />
-            <Route path="/products" element={<Products />} />
-            <Route path="/singleproduct/:id" element={<SingleProduct />} />
-            <Route path="/cart" element={<Cart />} />
-            <Route path="/home-collection" element={<HomeCollection />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/packages" element={<Packages />} />
-            <Route path="/locate-clinic" element={<LocateClinic />} />
-            <Route path="/radiology-services" element={<RadiologyServices />} />
-          </Routes>
-          <Footer />
-        </Router>
+        <CartProvider>
+          <Router basename="/project-konnect">
+            <Header />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="*" element={<ErrorPage />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/tests" element={<Tests />} />
+              <Route path="/products" element={<Products />} />
+              <Route path="/singleproduct/:id" element={<SingleProduct />} />
+              <Route path="/cart" element={<Cart />} />
+              <Route path="/home-collection" element={<HomeCollection />} />
+              <Route path="/services" element={<Services />} />
+              <Route path="/packages" element={<Packages />} />
+              <Route path="/locate-clinic" element={<LocateClinic />} />
+              <Route
+                path="/radiology-services"
+                element={<RadiologyServices />}
+              />
+            </Routes>
+            <Footer />
+          </Router>
+        </CartProvider>
       </div>
     </ThemeProvider>
   );

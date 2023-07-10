@@ -1,24 +1,6 @@
 import React from "react";
 import DynamicImage from "../requiredPages/DynamicImage";
 
-// const styles = {
-//   leftImg: {
-//     backgroundImage: "url(./images/sample-img.jpg)",
-//     widht: "auto",
-//     height: "auto",
-//     backgroundPosition: "left",
-//     backgroundRepeat: "no-repeat",
-//     backgroundSize: "contain",
-//   },
-
-//   content: {
-//       height: "100%",
-//       width: "100%",
-//       backgroundColor: "rgba(0, 0, 0, 0.5)",
-//       color: "white",
-//   },
-// };
-
 const SectionThree = () => {
   return (
     <>

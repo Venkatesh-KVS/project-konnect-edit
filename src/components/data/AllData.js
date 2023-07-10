@@ -40,6 +40,7 @@ export const organImages = [
 
 export const testsData = [
   {
+    id: 1,
     title: "HbA1c (Glycated Haemoglobin)",
     price: 2000,
     inv: "INV1663",
@@ -47,6 +48,7 @@ export const testsData = [
       "Excepteur sint occaecat cupidatat non proident, sunt in culpa",
   },
   {
+    id: 2,
     title: "IHC ER/PR/HER2nu(BREAST PANEL)",
     price: 4000,
     inv: "INV1441",
@@ -54,6 +56,7 @@ export const testsData = [
       "Excepteur sint occaecat cupidatat non proident, sunt in culpa",
   },
   {
+    id: 3,
     title: "HbA1c (Glycated Haemoglobin)",
     price: 2000,
     inv: "INV1663",
@@ -61,6 +64,7 @@ export const testsData = [
       "Excepteur sint occaecat cupidatat non proident, sunt in culpa",
   },
   {
+    id: 4,
     title: "IHC ER/PR/HER2nu(Breast panel) + Ki-67",
     price: 5000,
     inv: "INV2408",
@@ -68,6 +72,7 @@ export const testsData = [
       "Excepteur sint occaecat cupidatat non proident, sunt in culpa",
   },
   {
+    id: 5,
     title: "10X300 SWAB C/S",
     price: 3000,
     inv: "INV1441",
@@ -75,6 +80,7 @@ export const testsData = [
       "Excepteur sint occaecat cupidatat non proident, sunt in culpa",
   },
   {
+    id: 6,
     title: "17-Ketosteroids",
     price: 1700,
     inv: "INV3",

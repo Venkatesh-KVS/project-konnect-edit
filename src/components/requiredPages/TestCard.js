@@ -1,71 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
+import { useCart } from "react-use-cart";
 
-export const cardData = [
-  {
-    title: "HbA1c (Glycated Haemoglobin)",
-    price: 2000,
-    inv: "INV1663",
-    description:
-      "Excepteur sint occaecat cupidatat non proident, sunt in culpa",
-  },
-  {
-    title: "IHC ER/PR/HER2nu(BREAST PANEL)",
-    price: 4000,
-    inv: "INV1441",
-    description:
-      "Excepteur sint occaecat cupidatat non proident, sunt in culpa",
-  },
-  {
-    title: "HbA1c (Glycated Haemoglobin)",
-    price: 2000,
-    inv: "INV1663",
-    description:
-      "Excepteur sint occaecat cupidatat non proident, sunt in culpa",
-  },
-  {
-    title: "IHC ER/PR/HER2nu(Breast panel) + Ki-67",
-    price: 5000,
-    inv: "INV2408",
-    description:
-      "Excepteur sint occaecat cupidatat non proident, sunt in culpa",
-  },
-  {
-    title: "10X300 SWAB C/S",
-    price: 3000,
-    inv: "INV1441",
-    description:
-      "Excepteur sint occaecat cupidatat non proident, sunt in culpa",
-  },
-  {
-    title: "17-Ketosteroids",
-    price: 1700,
-    inv: "INV3",
-    description:
-      "Excepteur sint occaecat cupidatat non proident, sunt in culpa",
-  },
-];
-export const TestCard = ({ title, price, inv }) => {
+export const TestCard = (props) => {
+  const { addItem } = useCart();
+  const [buttonText, setButtonText] = useState("Add to Cart");
+  const changeText = (text) => {
+    setButtonText(text);
+  };
+
+  // const ProductList = () => {
+  //   const { addItem } = useCart();
+
+  //   const handleAddToCart = (product) => {
+  //     addItem(product);
+  //   };
+
   return (
     <Wrapper>
       <div className="tstCards d-flex gap-2">
         <div className="tstsCard w-100">
-          <div className="go-corner" href="#">
+          <div className="go-corner">
             <div className="go-arrow">→</div>
           </div>
 
           <div className="w-100">
-            <h5 className="tstTitle">{title}</h5>
+            <h5 className="tstTitle">{props.title}</h5>
             <p className="tstInv">
-              INVCODE:<b> {inv} </b>
+              INVCODE:<b> {props.inv} </b>
             </p>
           </div>
 
           <div className="d-flex w-100 justify-content-between align-items-center border-top pt-3">
-            <h6 className="mb-0 tstPrice">RS {price}</h6>
-            <button className="txtcartBtn btn">
-              Add to Cart
-              <i class="fa-solid fa-cart-plus"></i>
+            <h6 className="mb-0 tstPrice">RS {props.price}</h6>
+            <button
+              className="tstCardBtn btn"
+              onClick={() => {
+                addItem(props.item);
+                changeText("Added to Cart");
+                // handleAddToCart(product);
+              }}
+            >
+              {buttonText}
             </button>
           </div>
         </div>
@@ -78,10 +54,8 @@ const Wrapper = styled.section`
   .tstCards {
     flex-wrap: wrap;
     text-align: left;
-    /* margin: 25px 0 50px 0; */
     background-color: #fff;
     border: 2px solid #00aeef;
-    // box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     color: #fff;
     border-radius: 4px;
     padding: 2rem;
@@ -127,13 +101,59 @@ const Wrapper = styled.section`
   .tstCards:hover:before {
     transform: scale(21);
   }
+  .tstCards:hover {
+    &:hover .tstPrice {
+      color: ${({ theme }) => theme.colors.white};
+    }
+
+    &:hover .tstCardBtn {
+      color: ${({ theme }) => theme.colors.txt};
+      background-color: ${({ theme }) => theme.colors.white};
+    }
+  }
 
   .tstsCard {
-    width: 100;
+    /* width: 100; */
     height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    .tstCardBtn {
+      font-weight: 600;
+      font-size: 1rem;
+      position: relative;
+      display: inline-block;
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $color;
+        border-radius: 10rem;
+        /* z-index: 2; */
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: ${({ theme }) => theme.colors.secondary};
+        transition: all 0.3s;
+        border-radius: 5px;
+        z-index: -1;
+      }
+      &:hover {
+        color: #fff;
+        z-index: 1;
+        &:before {
+          width: 100%;
+        }
+      }
+    }
     .tstTitle {
       font-size: 1.25rem;
       font-weight: 800;
@@ -149,21 +169,17 @@ const Wrapper = styled.section`
       font-weight: 900;
       font-size: 1.2rem;
     }
-    .tstCards:hover .tstPrice {
-      color: white;
-    }
   }
 
-  .txtcartBtn {
+  .tstCardBtn {
     color: #005bab;
     font-size: 0.8rem;
-    width: 6rem;
     border: 1px solid #005bab;
     justify-content: flex-end;
   }
   .txtcartBtn:hover {
-    background-color: #005bab;
-    color: white;
+    background-color: ${({ theme }) => theme.colors.white};
+    color: ${({ theme }) => theme.colors.primary};
   }
 
   .para {

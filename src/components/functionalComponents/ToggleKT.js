@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 import { styled } from "styled-components";
-
+import { Link } from "react-router-dom";
 import { BsFilter, BsSearch } from "react-icons/bs";
 import { organImages } from "../data/AllData";
-import { cardData, TestCard } from "../requiredPages/TestCard";
+import { TestCard } from "../requiredPages/TestCard";
+import { testsData } from "../data/AllData";
 import OrganCarousel from "../requiredPages/OrganCarousel";
 import AtoZ from "../requiredPages/AtoZ";
+import { FaShoppingCart } from "react-icons/fa";
+import { useCart } from "react-use-cart";
+// import CartIcon from "./CartIcon";
 
 const blogs = [
   { id: 1, title: "" },
@@ -14,6 +18,8 @@ const blogs = [
 
 const ToggleKT = () => {
   const [search, setSearch] = useState("");
+
+  const { totalItemsInCart } = useCart();
 
   return (
     <Wrapper>
@@ -36,6 +42,16 @@ const ToggleKT = () => {
             />
             <BsSearch />
           </div>
+          <div className="cart-icon">
+            <Link to="/cart" className="cart-icon-box">
+              <FaShoppingCart className="cart-icon" />
+              {/* <span> {0} </span> */}
+              {totalItemsInCart > 0 && (
+                <span className="item-count">{totalItemsInCart}</span>
+              )}
+              {/* <CartIcon itemCount={itemCount} /> */}
+            </Link>
+          </div>
         </div>
         <div className="selectionBox d-flex gap-2 mb-4">
           <div className="a-zBox" style={{ width: "40%" }}>
@@ -50,20 +66,22 @@ const ToggleKT = () => {
           </div>
         </div>
         <div className="results d-flex flex-wrap gap-3 justify-content-center">
-          {cardData
-            .filter((card) => {
-              return search.toLowerCase() === ""
-                ? card
-                : card.title.toLowerCase().includes(search);
+          {testsData
+            .filter((item) => {
+              return search.toLowerCase() === " "
+                ? item
+                : item.title.toLowerCase().includes(search);
             })
-            .map((card, index) => (
+            .map((item, index) => (
               <TestCard
                 key={index}
-                title={card.title}
-                price={card.price}
-                inv={card.inv}
+                title={item.title}
+                price={item.price}
+                inv={item.inv}
+                item={item}
               />
             ))}
+          {/* <Cart /> */}
         </div>
       </div>
     </Wrapper>
@@ -76,6 +94,33 @@ const Wrapper = styled.section`
     /* background-color: grey; */
     .kt-searchBox {
       /* background-color: rebeccapurple; */
+      gap: 25px;
+      .cart-icon {
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        svg {
+          font-size: 30px;
+          fill: ${({ theme }) => theme.colors.primary};
+        }
+        span {
+          position: absolute;
+          color: ${({ theme }) => theme.colors.primary};
+
+          top: -10px;
+          height: 15px;
+          width: 15px;
+          /* background-color: red; */
+          align-items: center;
+          text-align: center;
+          justify-content: center;
+          margin: 0;
+          font-size: 1rem;
+          font-weight: 600;
+        }
+      }
 
       .filterBy {
         align-items: center;

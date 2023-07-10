@@ -90,7 +90,7 @@ const Tests = () => {
           </div>
           <div className="box-right-bottom ">
             <div className="box-mb ">
-              {/* <h6>All</h6> */}
+              <h6>All</h6>
               <div className="tst-group d-flex gap-3">
                 {/* {cardData.map((card, index) => (
                   <TestCard
