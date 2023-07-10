@@ -87,4 +87,12 @@ export const testsData = [
     description:
       "Excepteur sint occaecat cupidatat non proident, sunt in culpa",
   },
+  {
+    id: 7,
+    title: "17-Ketosteroids",
+    price: 1700,
+    inv: "INV3",
+    description:
+      "Excepteur sint occaecat cupidatat non proident, sunt in culpa",
+  },
 ];

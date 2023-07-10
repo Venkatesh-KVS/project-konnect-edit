@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 import { NavLink } from "react-router-dom";
-
+import { FaShoppingCart } from "react-icons/fa";
 const Navbar = () => {
   return (
     <Wrapper>
@@ -63,6 +63,11 @@ const Navbar = () => {
               </NavLink>
             </li>
           </ul>
+          <div className="cart-icon">
+            <NavLink to="/cart" className="cart-icon-box">
+              <FaShoppingCart className="cart-icon" />
+            </NavLink>
+          </div>
           {/* <div className="cart-icon">
             <NavLink to="/cart" className="nav-list">
               <svg

@@ -7,68 +7,73 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
   return (
     <Wrapper>
-      <div className="header ">
-        <div className="top-nav container d-flex justify-content-between">
-          <div className="logo">
-            <NavLink to={"/"}>
-              <DynamicImage imageName={"konnect-logo.png"} width={300} />
-            </NavLink>
-          </div>
+      <div className="header">
+        <div className="header-fixed">
+          <div className="top-nav container d-flex justify-content-between">
+            <div className="logo">
+              <NavLink to={"/"}>
+                <DynamicImage imageName={"konnect-logo.png"} width={300} />
+              </NavLink>
+            </div>
 
-          <div className="searchBox d-flex gap-2">
-            <select className="select-box">
-              <option className="cities" value="meat">
-                Select Your City
-              </option>
-              <option className="cities" value="meat">
-                Hyderabad
-              </option>
-              <option className="cities" value="meat">
-                Bangalore
-              </option>
-              <option className="cities" value="meat">
-                Sangareddy
-              </option>
-              <option className="cities" value="meat">
-                Warangal
-              </option>
-              <option className="cities" value="meat">
-                Nizamabad
-              </option>
-              <option className="cities" value="meat">
-                Nellore
-              </option>
-              <option className="cities" value="meat">
-                Kurnool
-              </option>
-              <option className="cities" value="meat">
-                Karimnagar
-              </option>
-              <option className="cities" value="meat">
-                Nandyal
-              </option>
-              <option className="cities" value="meat">
-                Gulbarga
-              </option>
-            </select>
-            <input
-              className="input"
-              type="text"
-              placeholder="Search Tests/Package"
-              // value="sdf"
-              // onChange={}
-            />
-          </div>
-          <div className="register d-flex">
-            <div>
-              <button className="butn signup-button d-flex gap-2" onClick={"/"}>
-                Login / SignUp
-                <DynamicImage imageName={"/icons/signup.svg"} />
-              </button>
+            <div className="searchBox d-flex gap-2">
+              <select className="select-box">
+                <option className="cities" value="meat">
+                  Select Your City
+                </option>
+                <option className="cities" value="meat">
+                  Hyderabad
+                </option>
+                <option className="cities" value="meat">
+                  Bangalore
+                </option>
+                <option className="cities" value="meat">
+                  Sangareddy
+                </option>
+                <option className="cities" value="meat">
+                  Warangal
+                </option>
+                <option className="cities" value="meat">
+                  Nizamabad
+                </option>
+                <option className="cities" value="meat">
+                  Nellore
+                </option>
+                <option className="cities" value="meat">
+                  Kurnool
+                </option>
+                <option className="cities" value="meat">
+                  Karimnagar
+                </option>
+                <option className="cities" value="meat">
+                  Nandyal
+                </option>
+                <option className="cities" value="meat">
+                  Gulbarga
+                </option>
+              </select>
+              <input
+                className="input"
+                type="text"
+                placeholder="Search Tests/Package"
+                // value="sdf"
+                // onChange={}
+              />
+            </div>
+            <div className="register d-flex">
+              <div>
+                <button
+                  className="butn signup-button d-flex gap-2"
+                  onClick={"/"}
+                >
+                  Login / SignUp
+                  <DynamicImage imageName={"/icons/signup.svg"} />
+                </button>
+              </div>
             </div>
           </div>
+          <Navbar />
         </div>
-        <Navbar />
       </div>
     </Wrapper>
   );
@@ -77,6 +82,17 @@ const Header = () => {
 export default Header;
 
 const Wrapper = styled.section`
+  .header {
+    position: relative;
+    height: 145px;
+    .header-fixed {
+      position: fixed;
+      width: 100%;
+      background-color: ${({ theme }) => theme.colors.white};
+      z-index: 9999;
+    }
+  }
+
   .searchBox {
     background-color: #00aeef;
     border-radius: 5px;

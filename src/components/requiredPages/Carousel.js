@@ -9,21 +9,23 @@ const MyCarousel = () => {
     <Wrapper className="container">
       <Carousel
         className="car-container"
+        x
         showStatus={false}
         showIndicators={true}
         showThumbs={false}
-        infiniteLoop
+        infiniteLoop={true}
         centerMode
         centerSlidePercentage={33.33}
         selectedItem={0}
         showArrows={true}
       >
-        {testsData.map((card, index) => (
+        {testsData.map((item, index) => (
           <TestCard
             key={index}
-            title={card.title}
-            price={card.price}
-            inv={card.inv}
+            title={item.title}
+            price={item.price}
+            inv={item.inv}
+            item={item}
           />
         ))}
       </Carousel>

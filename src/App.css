@@ -1,9 +1,8 @@
 * {
   color: #00203c;
   /* font-family: "Niramit", sans-serif; */
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
-
 
 /* --------------------------------------------Header-------------------------------------------- */
 .top-nav {
@@ -35,45 +34,6 @@
 }
 
 /* ------------------------------------------- Hero Section ----------------------------------------- */
-
-
-/* ----------------------------------------- Section two ------------------------------------------ */
-/* .secTwo {
-  height: 450px;
-}
-.tst {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-.secTwo {
-  background-color: #00aeef;
-  padding: 3rem 0 12rem 0;
-}
-.tst img {
-  width: 120px;
-  height: 120px;
-  transition: 0.2s;
-}
-.tst img:hover {
-  width: 135px;
-  height: 135px;
-}
-
-.tst-icon {
-  background-color: #fff;
-  padding: 35px;
-  border-radius: 100%;
-  overflow: visible;
-  margin-bottom: 15px;
-}
-
-.tst-title {
-  color: #fff;
-  font-size: 1.2rem;
-  text-align: center;
-} */
 
 /* ------------------------------------ Section three ------------------------------------------ */
 .secThree-img img {

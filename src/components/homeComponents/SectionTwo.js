@@ -75,18 +75,16 @@ const SectionTwo = () => {
 export default SectionTwo;
 
 const Wrapper = styled.section`
-  .book-test {
-    margin-top: -5rem;
-    z-index: 2;
-    background-color: ${({ theme }) => theme.colors.primary};
-    width: 20vw;
-    border-radius: 50px 50px 0 0;
-    padding: 10px;
-    text-align: center;
-    color: ${({ theme }) => theme.colors.white};
+  .s2-top {
+    /* z-index: 2; */
+    /* width: 20vw; */
+    /* border-radius: 50px 50px 0 0; */
+    /* padding: 10px; */
+    /* text-align: center; */
+    /* color: ${({ theme }) => theme.colors.white}; */
     h2 {
-      font-size: 32px;
-      font-weight: 600;
+      /* font-size: 24px; */
+      /* font-weight: 600; */
     }
   }
   .s2 {
@@ -98,12 +96,26 @@ const Wrapper = styled.section`
     margin: auto;
     text-align: center;
     vertical-align: middle;
-    width: 20%;
-    height: 70px;
+    width: 20vw;
+    height: 50px;
     border-radius: 50px 50px 0 0;
     padding: 0;
     h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
       padding-top: 15px;
+      position: relative;
+      /* &::after {
+        content: "";
+        position: absolute;
+        background-color: #fff;
+        left: 0px;
+        border-radius: 2px;
+        margin: auto 0px;
+        bottom: 0;
+        width: 100px;
+        height: 3px;
+      } */
     }
   }
   .s2-tests-box {

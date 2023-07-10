@@ -1,15 +1,11 @@
 import React, { useState } from "react";
 import { styled } from "styled-components";
-import { Link } from "react-router-dom";
 import { BsFilter, BsSearch } from "react-icons/bs";
 import { organImages } from "../data/AllData";
 import { TestCard } from "../requiredPages/TestCard";
 import { testsData } from "../data/AllData";
 import OrganCarousel from "../requiredPages/OrganCarousel";
 import AtoZ from "../requiredPages/AtoZ";
-import { FaShoppingCart } from "react-icons/fa";
-import { useCart } from "react-use-cart";
-// import CartIcon from "./CartIcon";
 
 const blogs = [
   { id: 1, title: "" },
@@ -18,8 +14,6 @@ const blogs = [
 
 const ToggleKT = () => {
   const [search, setSearch] = useState("");
-
-  const { totalItemsInCart } = useCart();
 
   return (
     <Wrapper>
@@ -41,16 +35,6 @@ const ToggleKT = () => {
               placeholder="Search A-Z / Search by Organ"
             />
             <BsSearch />
-          </div>
-          <div className="cart-icon">
-            <Link to="/cart" className="cart-icon-box">
-              <FaShoppingCart className="cart-icon" />
-              {/* <span> {0} </span> */}
-              {totalItemsInCart > 0 && (
-                <span className="item-count">{totalItemsInCart}</span>
-              )}
-              {/* <CartIcon itemCount={itemCount} /> */}
-            </Link>
           </div>
         </div>
         <div className="selectionBox d-flex gap-2 mb-4">
@@ -81,7 +65,6 @@ const ToggleKT = () => {
                 item={item}
               />
             ))}
-          {/* <Cart /> */}
         </div>
       </div>
     </Wrapper>

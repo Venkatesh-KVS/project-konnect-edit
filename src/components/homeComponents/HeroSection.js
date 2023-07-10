@@ -109,6 +109,6 @@ const Wrapper = styled.section`
   }
 
   video {
-    width: 28rem;
+    width: 25rem;
   }
 `;
