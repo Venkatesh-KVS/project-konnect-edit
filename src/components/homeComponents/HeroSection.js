@@ -13,7 +13,7 @@ const HeroSection = () => {
     //   backgroundRepeat: "no-repeat",
     // }}
     >
-      <div className="hero-sec container d-flex py-5 justify-content-between">
+      <div className="hero-sec container d-flex pt-5 justify-content-between">
         <div className="hero-content align-self-center ">
           <h1 className="display-4 fw-bold ">
             Your

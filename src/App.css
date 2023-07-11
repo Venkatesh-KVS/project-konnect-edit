@@ -3,7 +3,10 @@
   /* font-family: "Niramit", sans-serif; */
   font-family: "Quicksand", sans-serif;
 }
-
+.c1200{
+  max-width: 1200px;
+  margin: 0 auto !important;
+}
 /* --------------------------------------------Header-------------------------------------------- */
 .top-nav {
   justify-content: center;

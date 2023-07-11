@@ -1,3 +1,45 @@
+export const packagesData = [
+  {
+    id: 1,
+    code: "001",
+    title: "Health Condition One",
+    // imgUrl: "/project-konnect/images/organs/Heart.png",
+    price: "1499",
+    desc: "This is a description of the condition",
+    moreInfo: {
+      pOne: "Point One",
+      pTwo: "Point Two",
+      pThree: "Point Three",
+    },
+  },
+  {
+    id: 2,
+    code: "002",
+    title: "Health Condition Two",
+    // imgUrl: "/project-konnect/images/organs/Heart.png",
+    price: "1499",
+    desc: "Thi ns is a description of the co di a description of the co dia description of the co di a description of the co dition",
+    moreInfo: {
+      pOne: "Point One",
+      pTwo: "Point Two",
+      pThree: "Point Three",
+    },
+  },
+  {
+    id: 3,
+    code: "003",
+    title: "Health Condition Three",
+    // imgUrl: "/project-konnect/images/organs/Heart.png",
+    price: "1499",
+    desc: "This is a description of the condition",
+    moreInfo: {
+      pOne: "Point One",
+      pTwo: "Point Two",
+      pThree: "Point Three",
+    },
+  },
+];
+
 export const organImages = [
   {
     src: "/project-konnect/images/organs/Heart.png",

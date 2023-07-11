@@ -75,37 +75,24 @@ const SectionTwo = () => {
 export default SectionTwo;
 
 const Wrapper = styled.section`
-  .s2-top {
-    /* z-index: 2; */
-    /* width: 20vw; */
-    /* border-radius: 50px 50px 0 0; */
-    /* padding: 10px; */
-    /* text-align: center; */
-    /* color: ${({ theme }) => theme.colors.white}; */
-    h2 {
-      /* font-size: 24px; */
-      /* font-weight: 600; */
-    }
-  }
   .s2 {
     margin-bottom: 100px;
-  }
-  .s2-top {
-    background-color: ${({ theme }) => theme.colors.primary};
-    color: ${({ theme }) => theme.colors.white};
-    margin: auto;
-    text-align: center;
-    vertical-align: middle;
-    width: 20vw;
-    height: 50px;
-    border-radius: 50px 50px 0 0;
-    padding: 0;
-    h2 {
-      font-size: 1.5rem;
-      font-weight: 600;
-      padding-top: 15px;
-      position: relative;
-      /* &::after {
+    .s2-top {
+      background-color: ${({ theme }) => theme.colors.primary};
+      color: ${({ theme }) => theme.colors.white};
+      margin: auto;
+      text-align: center;
+      vertical-align: middle;
+      width: 20vw;
+      height: 50px;
+      border-radius: 50px 50px 0 0;
+      padding: 0;
+      h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding-top: 15px;
+        position: relative;
+        /* &::after {
         content: "";
         position: absolute;
         background-color: #fff;
@@ -116,8 +103,10 @@ const Wrapper = styled.section`
         width: 100px;
         height: 3px;
       } */
+      }
     }
   }
+
   .s2-tests-box {
     font-weight: 500;
     background: ${({ theme }) => theme.colors.primary};

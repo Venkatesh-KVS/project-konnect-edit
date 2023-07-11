@@ -4,7 +4,7 @@ import SectionTwo from "./SectionTwo";
 import SectionThree from "./SectionThree";
 import SectionFour from "./SectionFour";
 import SectionFive from "./SectionFive";
-// import SectionSix from "./SectionSix";
+import HealthPackages from "./HealthPackages";
 
 const Home = () => {
   return (
@@ -14,8 +14,8 @@ const Home = () => {
         <SectionTwo />
         <SectionThree />
         <SectionFour />
+        <HealthPackages />
         <SectionFive />
-        {/* <SectionSix /> */}
       </div>
     </div>
   );

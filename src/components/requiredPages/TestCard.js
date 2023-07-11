@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { useCart } from "react-use-cart";
-import { testsData } from "../data/AllData";
+// import { testsData } from "../data/AllData";
 
 export const TestCard = (props) => {
   const { addItem } = useCart();
@@ -10,38 +10,38 @@ export const TestCard = (props) => {
     setButtonText(text);
   };
 
-  for (let i = 0; i < testsData.length; i--)
-    return (
-      <Wrapper>
-        <div className="tstCards d-flex gap-2">
-          <div className="tstsCard w-100">
-            <div className="go-corner">
-              <div className="go-arrow">→</div>
-            </div>
+  // for (let i = 0; i < testsData.length; i--)
+  return (
+    <Wrapper>
+      <div className="tstCards d-flex gap-2">
+        <div className="tstsCard w-100">
+          <div className="go-corner">
+            <div className="go-arrow">→</div>
+          </div>
 
-            <div className="w-100">
-              <h5 className="tstTitle">{props.title}</h5>
-              <p className="tstInv">
-                INVCODE:<b> {props.inv} </b>
-              </p>
-            </div>
+          <div className="w-100">
+            <h5 className="tstTitle">{props.title}</h5>
+            <p className="tstInv">
+              INVCODE:<b> {props.inv} </b>
+            </p>
+          </div>
 
-            <div className="d-flex w-100 justify-content-between align-items-center border-top pt-3">
-              <h6 className="mb-0 tstPrice">RS {props.price}</h6>
-              <button
-                className="tstCardBtn btn"
-                onClick={() => {
-                  addItem(props.item);
-                  changeText("Added to Cart");
-                }}
-              >
-                {buttonText}
-              </button>
-            </div>
+          <div className="d-flex w-100 justify-content-between align-items-center border-top pt-3">
+            <h6 className="mb-0 tstPrice">RS {props.price}</h6>
+            <button
+              className="tstCardBtn btn"
+              onClick={() => {
+                addItem(props.item);
+                changeText("Added to Cart");
+              }}
+            >
+              {buttonText}
+            </button>
           </div>
         </div>
-      </Wrapper>
-    );
+      </div>
+    </Wrapper>
+  );
 };
 
 const Wrapper = styled.section`
