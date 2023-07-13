@@ -17,9 +17,7 @@
 .register {
   gap: 10px;
 }
-.navbar {
-  background-color: #00aeef;
-}
+
 .navbar-lists {
   gap: 2.5rem;
   font-size: 1rem;
