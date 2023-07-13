@@ -3,7 +3,7 @@ import HeroSection from "./HeroSection";
 import SectionTwo from "./SectionTwo";
 import SectionThree from "./SectionThree";
 import SectionFour from "./SectionFour";
-import SectionFive from "./SectionFive";
+// import SectionFive from "./SectionFive";
 import HealthPackages from "./HealthPackages";
 
 const Home = () => {
@@ -15,7 +15,7 @@ const Home = () => {
         <SectionThree />
         <SectionFour />
         <HealthPackages />
-        <SectionFive />
+        {/* <SectionFive /> */}
       </div>
     </div>
   );

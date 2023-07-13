@@ -1,10 +1,14 @@
 import { styled } from "styled-components";
-
+// import React, { useState } from "react";
 import DynamicImage from "./requiredPages/DynamicImage";
 import Navbar from "./Navbar";
 import { NavLink } from "react-router-dom";
+// import { testsData } from "./data/AllData";
+// import { TestCard } from "./requiredPages/TestCard";
 
 const Header = () => {
+  // const [search, setSearch] = useState("null");
+
   return (
     <Wrapper>
       <div className="header">
@@ -54,10 +58,9 @@ const Header = () => {
               </select>
               <input
                 className="input"
+                // onClick={(e) => setSearch(e.target.value)}
                 type="text"
                 placeholder="Search Tests/Package"
-                // value="sdf"
-                // onChange={}
               />
             </div>
             <div className="register d-flex">
@@ -72,6 +75,23 @@ const Header = () => {
               </div>
             </div>
           </div>
+          {/* <div className="syc d-flex gap-3 p-3">
+            {testsData
+              .filter((item) => {
+                return search.toLowerCase() === " "
+                  ? item
+                  : item.title.toLowerCase().includes(search);
+              })
+              .map((item, index) => (
+                <TestCard
+                  key={index}
+                  title={item.title}
+                  price={item.price}
+                  inv={item.inv}
+                  item={item}
+                />
+              ))}
+          </div> */}
           <Navbar />
         </div>
       </div>
@@ -82,6 +102,9 @@ const Header = () => {
 export default Header;
 
 const Wrapper = styled.section`
+  .syc {
+    background-color: ${({ theme }) => theme.colors.primary};
+  }
   .header {
     position: relative;
     height: 145px;

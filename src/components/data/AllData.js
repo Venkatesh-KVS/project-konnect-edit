@@ -2,10 +2,10 @@ export const packagesData = [
   {
     id: 1,
     code: "001",
-    title: "Health Condition One",
+    title: "Konnect Health Screen",
     // imgUrl: "/project-konnect/images/organs/Heart.png",
     price: "1499",
-    desc: "This is a description of the condition",
+    desc: "Basic Health Check-up Package can help in diagnosing conditions at an early stage and preventing complications related to them. It includes a unique diagnostic profile of tests for a health evaluation This package is suitable for males and females of all age groups",
     moreInfo: {
       pOne: "Point One",
       pTwo: "Point Two",
@@ -18,7 +18,7 @@ export const packagesData = [
     title: "Health Condition Two",
     // imgUrl: "/project-konnect/images/organs/Heart.png",
     price: "1499",
-    desc: "Thi ns is a description of the co di a description of the co dia description of the co di a description of the co dition",
+    desc: "Thi ns is a description of the co di a description of the co dia description of the co dition",
     moreInfo: {
       pOne: "Point One",
       pTwo: "Point Two",

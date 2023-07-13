@@ -62,6 +62,11 @@ const Navbar = () => {
                 Locate Clinic
               </NavLink>
             </li>
+            <li>
+              <NavLink to="/partner-with-us" className="nav-list">
+                Partner With US
+              </NavLink>
+            </li>
           </ul>
           <div className="cart-icon">
             <NavLink to="/cart" className="cart-icon-box">

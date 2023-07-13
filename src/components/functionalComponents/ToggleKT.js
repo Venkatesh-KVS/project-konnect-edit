@@ -52,7 +52,7 @@ const ToggleKT = () => {
         <div className="results d-flex flex-wrap gap-3 justify-content-center">
           {testsData
             .filter((item) => {
-              return search.toLowerCase() === " "
+              return search.toLowerCase() === ""
                 ? item
                 : item.title.toLowerCase().includes(search);
             })
@@ -86,7 +86,7 @@ const Wrapper = styled.section`
           color: ${({ theme }) => theme.colors.primary};
           border: none;
           &:focus {
-            border: none;
+            outline-style: none;
           }
         }
         svg {
@@ -106,6 +106,9 @@ const Wrapper = styled.section`
           font-size: 15px;
           padding: 5px 25px;
           width: 100%;
+          &:focus {
+            outline-style: none;
+          }
         }
 
         svg {

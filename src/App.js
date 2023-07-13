@@ -17,6 +17,7 @@ import LocateClinic from "./components/LocateClinic";
 import Tests from "./components/Tests";
 import RadiologyServices from "./components/services/RadiologyServices";
 import { CartProvider } from "react-use-cart";
+import PartnerWithUs from "./components/PartnerWithUs";
 
 // const mysql = require("mysql2");
 // const connectSQLdb = require("./server/controller/mysql_controller");
@@ -50,6 +51,7 @@ function App() {
               <Route path="/services" element={<Services />} />
               <Route path="/packages" element={<Packages />} />
               <Route path="/locate-clinic" element={<LocateClinic />} />
+              <Route path="/partner-with-us" element={<PartnerWithUs />} />
               <Route
                 path="/radiology-services"
                 element={<RadiologyServices />}

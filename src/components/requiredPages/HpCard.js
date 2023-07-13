@@ -12,11 +12,8 @@ const HpCard = (props) => {
 
   return (
     <Wrapper>
-      <div
-        className="hpCard-container d-flex p-0 border "
-        style={{ width: "100%" }}
-      >
-        <div className="hpCard rounded w-100 ">
+      <div className="hpCard-container d-flex p-0 border ">
+        <div className="hpCard rounded ">
           <div className="hpTitle-box d-flex justify-content-between align-items-center gap-3 rounded-top px-3">
             <h5 className="hpTitle d-flex gap-2 py-3 m-0 ">
               <img
@@ -30,11 +27,9 @@ const HpCard = (props) => {
               Code: {props.code}
             </p>
           </div>
-          <div className="hpInfo-box rounded-bottom d-flex flex-column justify-content-between">
+          <div className="hpInfo-box rounded-bottom d-flex  flex-column justify-content-between">
             <div>
-              <p className="hpDesc flex flex-wrap" style={{ width: "300px" }}>
-                {props.desc}
-              </p>
+              <p className="hpDesc">{props.desc}</p>
               <p className="hpMoreInfo">{props.moreInfo}</p>
             </div>
             <div className="d-flex justify-content-between align-items-center">
@@ -45,7 +40,7 @@ const HpCard = (props) => {
                 className="hpBtn btn"
                 onClick={() => {
                   addItem(props.item);
-                  changeText("Added to Cart");
+                  changeText("View Cart");
                 }}
               >
                 {buttonText}
@@ -62,6 +57,7 @@ export default HpCard;
 
 const Wrapper = styled.section`
   .hpCard-container {
+    width: 50%;
     .hpTitle-box {
       height: 80px;
       background-color: ${({ theme }) => theme.colors.secondary};

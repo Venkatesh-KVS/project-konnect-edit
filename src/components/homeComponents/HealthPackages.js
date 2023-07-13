@@ -16,7 +16,7 @@ const HealthPackages = () => {
         </p>
       </div>
       <div className="container flex-wrap ">
-        <div className="hpCards d-flex justify-content-between m-3 gap-3">
+        <div className="hpCards d-flex justify-content-between m-3 flex-wrap gap-3">
           {packagesData.map((item, index) => (
             <HpCard
               key={index}
@@ -36,4 +36,7 @@ const HealthPackages = () => {
 
 export default HealthPackages;
 
-const Wrapper = styled.section``;
+const Wrapper = styled.section`
+  .hpCards {
+  }
+`;

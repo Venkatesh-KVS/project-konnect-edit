@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap');
+
 * {
   color: #00203c;
-  /* font-family: "Niramit", sans-serif; */
   font-family: "Quicksand", sans-serif;
 }
 .c1200{
@@ -156,7 +157,7 @@
 }
 .s5-search {
   background-color: #ffffff;
-
+  
   padding: 8px 24px;
   font-size: 1.2rem;
   color: #005bab;
@@ -172,4 +173,53 @@
 }
 .s5-bookAtest {
   margin-top: 50px 0 25px 0;
+}
+
+/* ----------------------------------------- Partner with us ------------------------------------------ */
+
+.r_section{
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+.r_container{
+  max-width: 1140px;
+  /* / display: flex; / */
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+.r_container > div{
+  margin: 20px 0;
+}
+
+.r_heading_title{
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 38px;
+  line-height: 45px;
+}
+.r_heading_title_secondary{
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 18px;
+  line-height: 45px;
+  margin-bottom: 0;
+}
+/* p{
+  font-size: 16px;
+  line-height: 26px;
+  color: #6E6E6E;
+} */
+.r_para{
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 600;
+  color: #6E6E6E;
+}
+.r_subtitle{
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #00AEEF;
+  position: relative;
 }

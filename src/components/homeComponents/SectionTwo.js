@@ -51,7 +51,7 @@ const SectionTwo = () => {
         <div
           className="s2-tests-container container"
           style={{
-            background: `url("project-konnect/images/k-10.png")`,
+            background: `url("/project-konnect/images/k-10.png")`,
             backgroundSize: "70%",
             backgroundRepeat: "no-repeat",
             backgroundColor: "#fff",
