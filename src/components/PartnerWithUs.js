@@ -325,7 +325,7 @@ const Wrapper = styled.section`
       padding-right: 75px;
       .r_subtitle {
         position: relative;
-        color: ${({ theme }) => theme.colors.white};
+        color: ${({ theme }) => theme.colors.primary};
       }
       .r_subtitle:after {
         content: "";
@@ -333,9 +333,9 @@ const Wrapper = styled.section`
         left: 110%;
         top: 15px;
         width: 150px;
-        height: 8px;
+        height: 5px;
         border-radius: 8px;
-        background: ${({ theme }) => theme.colors.white};
+        background: ${({ theme }) => theme.colors.primary};
       }
       h2.r_heading_title {
         position: relative;
@@ -386,6 +386,7 @@ const Wrapper = styled.section`
       z-index: -1;
     }
   }
+
   #pwu_s2 {
     background: #f8f8f9;
     padding: 50px 0;
@@ -447,9 +448,9 @@ const Wrapper = styled.section`
       right: 105%;
       top: 10px;
       width: 150px;
-      height: 8px;
+      height: 5px;
       border-radius: 8px;
-      background: ${({ theme }) => theme.colors.white};
+      background: ${({ theme }) => theme.colors.primary};
     }
     .r_subtitle:before {
       content: "";
@@ -459,7 +460,7 @@ const Wrapper = styled.section`
       width: 150px;
       height: 5px;
       border-radius: 8px;
-      background: ${({ theme }) => theme.colors.white};
+      background: ${({ theme }) => theme.colors.primary};
     }
     #pwu_s32 {
       > div {
@@ -505,10 +506,10 @@ const Wrapper = styled.section`
       position: absolute;
       left: -25px;
       top: 0;
-      width: 8px;
+      width: 5px;
       border-radius: 8px;
       height: 100%;
-      background-color: var(--color_primary);
+      background-color: ${({ theme }) => theme.colors.primary};
     }
     #pwu_s42 {
       position: relative;
@@ -548,5 +549,18 @@ const Wrapper = styled.section`
       background: url("/project-konnect/images/dotGrids1.png");
       z-index: -1;
     }
+  }
+  .r_subtitle {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 30px;
+    color: ${({ theme }) => theme.colors.primary};
+    position: relative;
+  }
+  .r_para {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #6e6e6e;
   }
 `;
