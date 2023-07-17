@@ -40,7 +40,7 @@ const PatientExperience = () => {
           <div
             className="pe-right"
             style={{
-              background: `url("project-konnect/images/patient1.jpg")`,
+              background: `url("/project-konnect/images/patient1.jpg")`,
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
             }}

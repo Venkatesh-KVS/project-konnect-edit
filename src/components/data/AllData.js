@@ -1,7 +1,7 @@
 export const patientStoryData = [
   {
     id: 1,
-    src: "project-konnect/images/pwu_s42i1.jpg",
+    src: "/project-konnect/images/pwu_s42i1.jpg",
     name: "NameOne",
     info: "unde Description unde omnis iste ",
     description:
@@ -9,7 +9,7 @@ export const patientStoryData = [
   },
   {
     id: 2,
-    src: "project-konnect/images/pwu_s42i2.jpg",
+    src: "/project-konnect/images/pwu_s42i2.jpg",
     name: "NameOneTwo",
     info: "The unde Description unde omnis iste ",
 
@@ -18,7 +18,7 @@ export const patientStoryData = [
   },
   {
     id: 3,
-    src: "project-konnect/images/pwu_s42i3.jpg",
+    src: "/project-konnect/images/pwu_s42i3.jpg",
     name: "NameOneThree",
     info: "The unde Description unde omnis iste ",
 
@@ -27,7 +27,7 @@ export const patientStoryData = [
   },
   {
     id: 4,
-    src: "project-konnect/images/pwu_s42i1.jpg",
+    src: "/project-konnect/images/pwu_s42i1.jpg",
     name: "NameOneThree",
     info: "The unde Description unde omnis iste ",
 
@@ -36,7 +36,7 @@ export const patientStoryData = [
   },
   {
     id: 5,
-    src: "project-konnect/images/pwu_s42i2.jpg",
+    src: "/project-konnect/images/pwu_s42i2.jpg",
     name: "NameOneThree",
     info: "The unde Description unde omnis iste ",
 
@@ -45,7 +45,7 @@ export const patientStoryData = [
   },
   {
     id: 4,
-    src: "project-konnect/images/pwu_s42i1.jpg",
+    src: "/project-konnect/images/pwu_s42i1.jpg",
     name: "NameOneThree",
     info: "The unde Description unde omnis iste ",
 
@@ -54,7 +54,7 @@ export const patientStoryData = [
   },
   {
     id: 5,
-    src: "project-konnect/images/pwu_s42i2.jpg",
+    src: "/project-konnect/images/pwu_s42i2.jpg",
     name: "NameOneThree",
     info: "The unde Description unde omnis iste ",
 
